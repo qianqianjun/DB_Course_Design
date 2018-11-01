@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="DbCourseDesign:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/DbCourseDesign_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="DbCourseDesign/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="DbCourseDesign" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/libs/mysql-connector-java-8.0.12.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/fastjson-1.2.9.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/commons-logging-4.0.6.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
