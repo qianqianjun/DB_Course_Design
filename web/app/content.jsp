@@ -40,12 +40,6 @@
                 <ul class="dropdown-menu">
                     <li class="divider"></li>
                     <li>
-                        <a href="" id="updatePassword">
-                            <i class="top_png mm"></i>修改密码
-                        </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
                         <a href="${pageContext.request.contextPath}/LogoutServlet" id="exit">
                             <i class="top_png tc"></i>退出
                         </a>
