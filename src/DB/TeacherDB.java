@@ -16,6 +16,7 @@ public class TeacherDB {
         String sql="select * from teacher where tno=?";
         try {
             ps = connection.prepareStatement(sql);
+            ps.setString(1,tno);
             res = ps.executeQuery();
             if(res.next())
             {
@@ -25,7 +26,7 @@ public class TeacherDB {
                 teacher.setTname(res.getString("tname"));
                 teacher.setTdept(res.getString("tdept"));
                 teacher.setRank(res.getString("rank"));
-                teacher.setPhone(res.getInt("phone"));
+                teacher.setPhone(res.getString("phone"));
                 teacher.setLogo(res.getString("logo"));
                 teacher.setLocation(res.getString("location"));
                 teacher.setId(res.getInt("id"));

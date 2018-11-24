@@ -1,10 +1,10 @@
 package servlets;
-
 import DB.StudentDB;
+import DB.TeacherDB;
 import DB.UserDB;
 import model.Student;
+import model.Teacher;
 import model.User;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,12 +13,12 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
-
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String account=request.getParameter("yhm");
-        String password=request.getParameter("mm");
+        String account=request.getParameter("account");
+        String password=request.getParameter("password");
+        String type=request.getParameter("type");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
         //response.setStatus(302);
@@ -32,26 +32,70 @@ public class LoginServlet extends HttpServlet {
         }
         else
         {
-            //查询用户表中是否存在信息：
             UserDB userDB=new UserDB();
-            User user=userDB.login(account,password);
+            User user=userDB.login(account,password,type);
             if(user==null) {
-                System.out.println("账号名或者密码不正确！");
                 PrintWriter printWriter=response.getWriter();
                 printWriter.print("<script type='text/javascript'>alert('用户名或者密码错误！');window.location.href='"+request.getContextPath()+"/index.jsp'</script>");
                 printWriter.flush();
                 printWriter.close();
             }
-            else
+            if(type.equals("student".toString()))
             {
                 //查询学生表详细信息，并设置session
                 StudentDB studentDB=new StudentDB();
                 Student student=studentDB.getInfo(user.getAccount());
-                HttpSession session=request.getSession();
-                session.setAttribute("userinfo",student);
-                //跳转到content页面：
-                response.setStatus(302);
-                response.sendRedirect(request.getContextPath()+"/app/content.jsp");
+                if(student==null)
+                {
+                    PrintWriter printWriter=response.getWriter();
+                    printWriter.print("<script type='text/javascript'>alert('没有您的登录信息，请联系管理员！');window.location.href='"+request.getContextPath()+"/index.jsp'</script>");
+                    printWriter.flush();
+                    printWriter.close();
+                }
+                else {
+                    HttpSession session = request.getSession();
+                    session.setAttribute("userinfo", student);
+                    //跳转到content页面：
+                    response.setStatus(302);
+                    response.sendRedirect(request.getContextPath() + "/app/content.jsp");
+                }
+            }
+            else if(type.equals("teacher"))
+            {
+                //查询教师表详细信息，并设置session
+                TeacherDB teacherDB=new TeacherDB();
+                Teacher teacher=teacherDB.getInfo(user.getAccount());
+                if(teacher==null)
+                {
+                    PrintWriter printWriter=response.getWriter();
+                    printWriter.print("<script type='text/javascript'>alert('没有您的登录信息，请联系管理员！');window.location.href='"+request.getContextPath()+"/index.jsp'</script>");
+                    printWriter.flush();
+                    printWriter.close();
+                }
+                else {
+                    HttpSession session = request.getSession();
+                    session.setAttribute("userinfo", teacher);
+                    //跳转到content页面：
+                    response.setStatus(302);
+                    response.sendRedirect(request.getContextPath() + "/app/content.jsp");
+                }
+            }
+            else if(type.equals("root")) {
+                TeacherDB teacherDB = new TeacherDB();
+                Teacher teacher = teacherDB.getInfo(user.getAccount());
+                if (teacher == null) {
+                    PrintWriter printWriter = response.getWriter();
+                    printWriter.print("<script type='text/javascript'>alert('没有您的登录信息，请联系管理员！');window.location.href='" + request.getContextPath() + "/index.jsp'</script>");
+                    printWriter.flush();
+                    printWriter.close();
+                } else {
+                    teacher.setType("root");
+                    HttpSession session = request.getSession();
+                    session.setAttribute("userinfo", teacher);
+                    //跳转到content页面：
+                    response.setStatus(302);
+                    response.sendRedirect(request.getContextPath() + "/app/content.jsp");
+                }
             }
         }
     }

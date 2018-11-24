@@ -5,8 +5,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>添加新的课程</title>
-    <link rel="icon" href="http://jwglxt.buct.edu.cn/jwglxt/logo/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="http://jwglxt.buct.edu.cn/jwglxt/logo/favicon.ico" type="image/x-icon">
     <style type="text/css">
         .active{font-weight: bolder;}
         #navbar-tabs li{ margin-top: 2px;}
@@ -31,78 +29,19 @@
             var cno=$("input[name='cno']").val();
             var introduce=$("textarea[name='introduce']").val();
             var weektime=$("input[name='weektime']").val();
-            console.log(tno,pcno,dept,capacity,runtime,cname,cno,introduce,weektime);
+            console.log(tno,dept,cno,cname,capacity,pcno,weektime,runtime,introduce);
         }
     </script>
 </head>
 <body class="body-container">
 <!-- top -->
-<c:if test="${empty userinfo}">
-<div class="navbar navbar-default navbar-static-top top1">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand logo_2">
-                <img src="../images/logo_jw_w.png" style="margin-top:-3px">
-                <span id="xtmc">北京化工大学教务管理系统</span>
-            </a>
-        </div>
-        <ul class="nav navbar-nav navbar-right  hidden-xs">
-            <li class="">
-                <a class="dropdown-toggle grxx" data-toggle="dropdown" aria-expanded="false">
-                    <span style="color:white;font-size:20px;">欢迎您，${userinfo.sname} 老师</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="divider"></li>
-                    <li>
-                        <a href="${pageContext.request.contextPath}/LogoutServlet" id="exit">
-                            <i class="top_png tc"></i>退出
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- 菜单  -->
-<div class="navbar_index">
-    <div class="container" id="myDiv1">
-        <nav id="cdNav" class="navbar-collapse bs-navbar-collapse collapse" role="navigation" aria-expanded="false">
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">信息维护
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li>
-                            <a tabindex="-1">专业方向确认
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">选课
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li>
-                            <a tabindex="-1">自主选课</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">信息查询
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li>
-                            <a tabindex="-1" target="_blank">教学执行计划查看</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</div>
+<%
+    request.setCharacterEncoding("utf-8");
+%>
+<c:if test="${!empty userinfo}">
+<jsp:include page="include/teacherheader.jsp">
+    <jsp:param name="tname" value="${userinfo.tname}"></jsp:param>
+</jsp:include>
 <!-- 主体 -->
 <div class="container padding-150">
     <div class="row clearfix">
@@ -183,7 +122,7 @@
     <p>数据库原理课程设计  高谦   计科1601班 </p>
 </div>
 </c:if>
-<c:if test="${!empty userinfo}">
+<c:if test="${empty userinfo}">
     <script type="text/javascript">
         window.location.href="${pageContext.request.contextPath}/index.jsp";
     </script>

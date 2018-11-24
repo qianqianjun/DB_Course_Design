@@ -4,13 +4,13 @@ public class User {
     private Integer id;
     private String account;
     private String password;
-    private Integer type;
+    private String type;
 
     public Integer getId() {
         return id;
     }
 
-    public Integer getType() {
+    public String getType() {
         return type;
     }
 
@@ -34,7 +34,7 @@ public class User {
         this.password = password;
     }
 
-    public void setType(Integer type) {
+    public void setType(String type) {
         this.type = type;
     }
 }

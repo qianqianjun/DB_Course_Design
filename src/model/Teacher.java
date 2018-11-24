@@ -5,15 +5,16 @@ public class Teacher {
     private String tname;
     private String tdept;
     private String rank;
-    private Integer phone;
+    private String phone;
     private String location;
     private String logo;
+    private String type="teacher";
 
     public Integer getId() {
         return id;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
@@ -53,7 +54,7 @@ public class Teacher {
         this.logo = logo;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -71,5 +72,13 @@ public class Teacher {
 
     public void setTno(String tno) {
         this.tno = tno;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
