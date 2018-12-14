@@ -9,10 +9,18 @@
         <jsp:include page="include/studentheader.jsp">
             <jsp:param name="sname" value="${userinfo.sname}"></jsp:param>
         </jsp:include>
+        <jsp:include page="include/changepasswordbody.jsp">
+            <jsp:param name="type" value="student"></jsp:param>
+            <jsp:param name="account" value="${userinfo.sno}"></jsp:param>
+        </jsp:include>
     </c:if>
     <c:if test="${userinfo.type=='teacher'}">
         <jsp:include page="include/teacherheader.jsp">
             <jsp:param name="tname" value="${userinfo.tname}"></jsp:param>
+        </jsp:include>
+        <jsp:include page="include/changepasswordbody.jsp">
+            <jsp:param name="type" value="teacher"></jsp:param>
+            <jsp:param name="account" value="${userinfo.tno}"></jsp:param>
         </jsp:include>
     </c:if>
 </c:if>

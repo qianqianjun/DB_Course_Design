@@ -4,100 +4,73 @@ public class Course {
     private Integer id;
     private String cno;
     private String cname;
-    private String runtime;
-    private Integer capacity;
-    private Integer status;
     private String dept;
     private String pcno;
-    private String tno;
-    private String introduce;
-    private String weektime;
+    private Integer status;
+    private String settno;
+    private String introduction;
 
-    public String getWeektime() {
-        return weektime;
+    public void setIntroduction(String introduction) {
+        this.introduction = introduction;
     }
 
-    public String getIntroduce() {
-        return introduce;
+    public String getIntroduction() {
+        return introduction;
     }
 
-    public String getTno() {
-        return tno;
+    public String getSettno() {
+        return settno;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public Integer getCapacity() {
-        return capacity;
+    public void setSettno(String settno) {
+        this.settno = settno;
     }
 
     public Integer getStatus() {
         return status;
     }
 
-    public String getCname() {
-        return cname;
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
-    public String getCno() {
-        return cno;
-    }
-
-    public String getDept() {
-        return dept;
-    }
-
-    public String getPcno() {
-        return pcno;
-    }
-
-    public String getRuntime() {
-        return runtime;
+    public Integer getId() {
+        return id;
     }
 
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public void setCapacity(Integer capacity) {
-        this.capacity = capacity;
-    }
-
-    public void setCname(String cname) {
-        this.cname = cname;
-    }
-
-    public void setCno(String cno) {
-        this.cno = cno;
-    }
-
-    public void setDept(String dept) {
-        this.dept = dept;
+    public String getPcno() {
+        return pcno;
     }
 
     public void setPcno(String pcno) {
         this.pcno = pcno;
     }
 
-    public void setRuntime(String runtime) {
-        this.runtime = runtime;
+    public String getDept() {
+        return dept;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
+    public void setDept(String dept) {
+        this.dept = dept;
     }
 
-    public void setTno(String tno) {
-        this.tno = tno;
+    public String getCno() {
+        return cno;
     }
 
-    public void setIntroduce(String introduce) {
-        this.introduce = introduce;
+    public void setCno(String cno) {
+        this.cno = cno;
     }
 
-    public void setWeektime(String weektime) {
-        this.weektime = weektime;
+    public String getCname() {
+        return cname;
+    }
+
+    public void setCname(String cname) {
+        this.cname = cname;
     }
 }

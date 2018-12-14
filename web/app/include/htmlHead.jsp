@@ -19,5 +19,6 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/zftal-ui.css">
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/bootstrap.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.extends.contact-min.js" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/add.css">
 </head>
 <body class="body-container">

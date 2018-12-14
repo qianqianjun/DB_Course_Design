@@ -1,10 +1,14 @@
 package servlets;
+import DB.MessageDB;
 import DB.StudentDB;
 import DB.TeacherDB;
 import DB.UserDB;
+import model.Message;
 import model.Student;
 import model.Teacher;
 import model.User;
+import org.omg.CORBA.INTERNAL;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +17,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
+import java.util.List;
+
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -21,8 +28,6 @@ public class LoginServlet extends HttpServlet {
         String type=request.getParameter("type");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html");
-        //response.setStatus(302);
-        //如果用户名和密码是空的：
         if(account==""||password=="")
         {
             PrintWriter printWriter=response.getWriter();
@@ -89,12 +94,15 @@ public class LoginServlet extends HttpServlet {
                     printWriter.flush();
                     printWriter.close();
                 } else {
+                    //设置管理员身份标识
                     teacher.setType("root");
+                    //设置管理员登录标识
                     HttpSession session = request.getSession();
                     session.setAttribute("userinfo", teacher);
-                    //跳转到content页面：
+                    session.setAttribute("type","root");
+                    //重定向到另外一个servlet
                     response.setStatus(302);
-                    response.sendRedirect(request.getContextPath() + "/app/content.jsp");
+                    response.sendRedirect("content");
                 }
             }
         }

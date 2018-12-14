@@ -27,6 +27,17 @@
             </div>
         </div>
     </c:if>
+    <c:if test='${userinfo.type=="root"}'>
+        <jsp:include page="include/rootheader.jsp">
+            <jsp:param name="tname" value="${userinfo.tname}"></jsp:param>
+        </jsp:include>
+        <div class="container padding-150">
+            <div class="row">
+                <%@include file="include/rootleft.jsp"%>
+                <%@include file="include/rootright.jsp"%>
+            </div>
+        </div>
+    </c:if>
 </c:if>
 <c:if test="${empty userinfo}">
     <script type="text/javascript">

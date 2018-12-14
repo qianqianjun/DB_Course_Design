@@ -1,7 +1,6 @@
 package DB;
 
 import model.User;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -38,5 +37,31 @@ public class UserDB {
             DB.close(connection,ps,res);
         }
         return null;
+    }
+    public Boolean changePassword(String account,String oldpassword,String type,String newpassword)
+    {
+        Connection connection=null;
+        PreparedStatement ps=null;
+        connection=DB.getConnection();
+        String sql="update user set user.password=? where id=" +
+                "(select temp.id from (select id from user where type=? and account=? and password=?)temp)";
+        try {
+
+            ps = connection.prepareStatement(sql);
+            ps.setString(1, newpassword);
+            ps.setString(2, type);
+            ps.setString(3, account);
+            ps.setString(4, oldpassword);
+            Integer result = ps.executeUpdate();
+            System.out.println(result);
+            if(result!=0)
+                return true;
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        finally {
+            DB.close(connection,ps);
+        }
+        return false;
     }
 }
