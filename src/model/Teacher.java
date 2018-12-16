@@ -7,7 +7,7 @@ public class Teacher {
     private String rank;
     private String phone;
     private String location;
-    private String logo;
+    private String sex;
     private String type="teacher";
 
     public Integer getId() {
@@ -20,10 +20,6 @@ public class Teacher {
 
     public String getLocation() {
         return location;
-    }
-
-    public String getLogo() {
-        return logo;
     }
 
     public String getRank() {
@@ -48,10 +44,6 @@ public class Teacher {
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    public void setLogo(String logo) {
-        this.logo = logo;
     }
 
     public void setPhone(String phone) {
@@ -80,5 +72,13 @@ public class Teacher {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 }

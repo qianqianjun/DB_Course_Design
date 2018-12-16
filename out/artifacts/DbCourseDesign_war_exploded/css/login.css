@@ -1,0 +1,98 @@
+body {
+
+}
+
+.wrap {
+    height: 383px;
+    margin-top: 8%;
+    width:100%;
+    background-color: #115095;
+
+
+}
+
+.wrap > .container {
+    width:1024px;
+    min-height: 383px;
+    background-image:url("../images/login.png") ;
+    -moz-background-size:1024px 383px;
+    -webkit-background-size:1024px 383px;
+    -o-background-size:1024px 383px;
+    background-size:1024px 383px;
+}
+
+.footer {
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    font-size:16px;
+    font-family:"Microsoft YaHei";
+    padding-top:30px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+.login_form {
+    width:30%;
+    background: rgba(255,255,255,.6);
+    padding: 50px 30px;
+    margin:5% auto auto 60%;
+}
+
+.input-tips {
+    font-size:16px;
+    font-family:"Microsoft YaHei";
+}
+
+.inputArea {
+    margin-top:10px;
+}
+
+.inputArea input {
+    width:100%;
+    height:50px;
+    font-size:16px;
+    font-family:"Microsoft YaHei";
+    border:0px;
+    padding:6px 50px;
+}
+
+#u {
+    background: rgba(255,255,255,0.9) url(../images/user.png) no-repeat 5% center;
+}
+
+#p {
+    background: rgba(255,255,255,0.9) url(../images/locked.png) no-repeat 5% center;
+}
+
+input[type="checkbox"] {
+    width:18px;
+    height:18px;
+    margin-top:10px;
+    margin-left:2%;
+    vertical-align:bottom;
+}
+
+.form-group {
+    margin-bottom:1px;
+}
+.login-footer{
+
+}
+
+textarea:-webkit-autofill, select:-webkit-autofill {
+
+}

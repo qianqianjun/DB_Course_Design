@@ -5,6 +5,7 @@ import model.Teacher;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class TeacherDB {
     public Teacher getInfo(String tno)
@@ -27,9 +28,8 @@ public class TeacherDB {
                 teacher.setTdept(res.getString("tdept"));
                 teacher.setRank(res.getString("rank"));
                 teacher.setPhone(res.getString("phone"));
-                teacher.setLogo(res.getString("logo"));
+                teacher.setSex(res.getString("sex"));
                 teacher.setLocation(res.getString("location"));
-                teacher.setId(res.getInt("id"));
                 return teacher;
             }
         }catch(Exception e)
@@ -41,4 +41,43 @@ public class TeacherDB {
         }
         return null;
     }
+
+    public Boolean add(Teacher teacher) throws SQLException {
+        Connection connection=DB.getConnection();
+        String sql="insert into teacher set tno=?,tname=?,tdept=?,rank=?,phone=?,location=?,sex=?";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,teacher.getTno());
+        ps.setString(2,teacher.getTname());
+        ps.setString(3,teacher.getTdept());
+        ps.setString(4,teacher.getRank());
+        ps.setString(5,teacher.getPhone());
+        ps.setString(6,teacher.getLocation());
+        ps.setString(7,teacher.getSex());
+        Integer rows=ps.executeUpdate();
+        if(rows>0)
+        {
+            sql="insert into user set account=?,password=?,type=?";
+            ps=connection.prepareStatement(sql);
+            ps.setString(1,teacher.getTno());
+            ps.setString(2,teacher.getTno());
+            ps.setString(3,"teacher");
+            rows=ps.executeUpdate();
+            DB.close(connection,ps);
+            if(rows>0)
+                return true;
+        }
+        return false;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+

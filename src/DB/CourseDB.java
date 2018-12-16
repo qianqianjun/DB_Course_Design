@@ -57,7 +57,6 @@ public class CourseDB {
                 course.setDept(resultSet.getString("dept"));
                 course.setCno(resultSet.getString("cno"));
                 course.setCname(resultSet.getString("cname"));
-                course.setId(resultSet.getInt("id"));
                 course.setStatus(resultSet.getInt("status"));
                 result.add(course);
             }
@@ -72,8 +71,8 @@ public class CourseDB {
         PreparedStatement ps=null;
         ResultSet resultSet=null;
         String sql=null;
-
-        if(tno==null) {
+        connection=DB.getConnection();
+        if(tno.equals("")) {
             if(college.equals("all")){
                 sql="select * from course where status=-1";
                 ps=connection.prepareStatement(sql);
@@ -89,7 +88,7 @@ public class CourseDB {
         }
         else{
             if(college.equals("all")){
-                sql="select * from course where status=-1 and course.setno=?";
+                sql="select * from course where status=-1 and course.settno=?";
                 ps=connection.prepareStatement(sql);
                 ps.setString(1,tno);
                 resultSet=ps.executeQuery();
@@ -108,7 +107,6 @@ public class CourseDB {
         {
             Course course=new Course();
             course.setStatus(resultSet.getInt("status"));
-            course.setId(resultSet.getInt("id"));
             course.setCname(resultSet.getString("cname"));
             course.setCno(resultSet.getString("cno"));
             course.setDept(resultSet.getString("dept"));
@@ -116,6 +114,106 @@ public class CourseDB {
             course.setSettno(resultSet.getString("settno"));
             course.setIntroduction(resultSet.getString("introduction"));
             result.add(course);
+        }
+        DB.close(connection,ps,resultSet);
+        return result;
+    }
+    public Boolean accessCourse(String cno) throws SQLException {
+        Connection connection=DB.getConnection();
+        String sql="update course set course.status=0 where cno=?";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,cno);
+        Integer rows=ps.executeUpdate();
+        DB.close(connection,ps);
+        if(rows>0)
+            return true;
+        return false;
+    }
+    public Course SelectByCno(String cno) throws SQLException {
+        Connection connection=DB.getConnection();
+        String sql="select * from course where cno=?";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,cno);
+        ResultSet resultSet=ps.executeQuery();
+        Course course=new Course();
+        if(resultSet.next())
+        {
+            course.setStatus(resultSet.getInt("status"));
+            course.setCname(resultSet.getString("cname"));
+            course.setCno(resultSet.getString("cno"));
+            course.setDept(resultSet.getString("dept"));
+            course.setPcno(resultSet.getString("pcno"));
+            course.setSettno(resultSet.getString("settno"));
+            course.setIntroduction(resultSet.getString("introduction"));
+        }
+        DB.close(connection,ps,resultSet);
+        return course;
+    }
+
+    public List<Course> SearchClass(String cno, String cname, String dept, String status) throws SQLException {
+        Connection connection=DB.getConnection();
+        PreparedStatement ps=null;
+        ResultSet resultSet=null;
+        List<Course> result=new ArrayList<Course>();
+        String sql="";
+        if(cno.equals(""))
+        {
+            sql="select * from course where 1 ";
+            String sqlcname=" and 1 ";
+            String sqldept=" and 1 ";
+            String sqlstatus=" and 1 ";
+            List<String> query=new ArrayList<String>();
+            if(!(status.equals("")||status.equals("all"))) {
+                sqlstatus = " and status=? ";
+                query.add(status);
+            }
+            if(!cname.equals("")) {
+                sqlcname = " and cname like ? ";
+                query.add("%"+cname+"%");
+            }
+            if(!(dept.equals("")||dept.equals("all"))) {
+                sqldept = " and dept=? ";
+                query.add(dept);
+            }
+            sql+=sqlstatus+sqlcname+sqldept;
+            ps=connection.prepareStatement(sql);
+            for(Integer i=0;i<query.size();i++)
+            {
+                ps.setString(i+1,query.get(i));
+            }
+            resultSet=ps.executeQuery();
+            while(resultSet.next())
+            {
+                Course course=new Course();
+                course.setStatus(resultSet.getInt("status"));
+                course.setCname(resultSet.getString("cname"));
+                course.setCno(resultSet.getString("cno"));
+                course.setDept(resultSet.getString("dept"));
+                course.setPcno(resultSet.getString("pcno"));
+                course.setSettno(resultSet.getString("settno"));
+                course.setIntroduction(resultSet.getString("introduction"));
+                result.add(course);
+            }
+        }
+        else
+        {
+            sql="select * from course where cno=?";
+            ps=connection.prepareStatement(sql);
+            ps.setString(1,cno);
+            resultSet=ps.executeQuery();
+            if(resultSet.next())
+            {
+                Course course=new Course();
+                course.setStatus(resultSet.getInt("status"));
+                course.setCname(resultSet.getString("cname"));
+                course.setCno(resultSet.getString("cno"));
+                course.setDept(resultSet.getString("dept"));
+                course.setPcno(resultSet.getString("pcno"));
+                course.setSettno(resultSet.getString("settno"));
+                course.setIntroduction(resultSet.getString("introduction"));
+                result.add(course);
+            }
+            DB.close(connection,ps,resultSet);
         }
         return result;
     }

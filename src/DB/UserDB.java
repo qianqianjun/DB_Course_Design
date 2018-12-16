@@ -23,7 +23,6 @@ public class UserDB {
             {
                 User user=new User();
                 user.setAccount(res.getString("account"));
-                user.setId(res.getInt("id"));
                 user.setPassword(res.getString("password"));
                 user.setType(res.getString("type"));
                 return user;
@@ -43,17 +42,14 @@ public class UserDB {
         Connection connection=null;
         PreparedStatement ps=null;
         connection=DB.getConnection();
-        String sql="update user set user.password=? where id=" +
-                "(select temp.id from (select id from user where type=? and account=? and password=?)temp)";
+        String sql="update user set user.password=? where account=" +
+                "(select temp.account from (select account from user where type=? and account=?)temp)";
         try {
-
             ps = connection.prepareStatement(sql);
             ps.setString(1, newpassword);
             ps.setString(2, type);
             ps.setString(3, account);
-            ps.setString(4, oldpassword);
             Integer result = ps.executeUpdate();
-            System.out.println(result);
             if(result!=0)
                 return true;
         }catch (Exception e) {
