@@ -1,49 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<style type="text/css">
-    #general h3{
-        line-height: 200px;
-    }
-    #course h3{
-        line-height: 200px;
-    }
-    #course{
-        padding-left: 30px;
-    }
-    #general{
-        padding-left: 30px;
-    }
-    .act{
-        font-weight: bolder;
-    }
-    .act a{
-        color: #555;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-bottom-color: transparent;
-    }
-    .act a:hover{
-        color: #555;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-bottom-color: transparent;
-    }
-</style>
-<script type="text/javascript">
-    function change(argu) {
-        argu.setAttribute("class","act");
-        if(argu.id=="gene") {
-            document.getElementById("general").setAttribute("style", "display:block;");
-            document.getElementById("course").setAttribute("style", "display:none;");
-            document.getElementById("cour").setAttribute("class","no");
-        }
-        else {
-            document.getElementById("course").setAttribute("style", "display:block;");
-            document.getElementById("general").setAttribute("style","display:none;");
-            document.getElementById("gene").setAttribute("class","no");
-        }
-    }
-</script>
+<%request.setCharacterEncoding("utf-8");%>
 <div class="container" style="margin-top: 30px;padding-left: 40px;">
     <div class="row clearfix" style="margin-bottom: 30px;">
         <div class="col-md-6 column">
@@ -67,7 +24,7 @@
                     <a href="#">基本信息</a>
                 </li>
                 <li>
-                    <a href="#" id="cour" onclick="change(this)">选课信息</a>
+                    <a href="#" id="cour" onclick="change(this)">其他信息</a>
                 </li>
             </ul>
         </div>
@@ -75,52 +32,67 @@
     <div class="row clearfix" id="general" style="display: block;">
         <div class="col-md-4 column">
             <h3>
-                h3. 这是一套可视化布局系统.
+               学号：${userinfo.getSno()}
             </h3>
             <h3>
-                h3. 这是一套可视化布局系统.
-            </h3>
-        </div>
-        <div class="col-md-4 column">
-            <h3>
-                h3. 这是一套可视化布局系统.
+                学院：${userinfo.getCollege()}
             </h3>
             <h3>
-                h3. 这是一套可视化布局系统.
+                政治面貌：${userinfo.getPoliticalstatus()}
             </h3>
         </div>
         <div class="col-md-4 column">
             <h3>
-                h3. 这是一套可视化布局系统.
+                姓名：${userinfo.getSname()}
             </h3>
             <h3>
-                h3. 这是一套可视化布局系统.
+                专业：${userinfo.getMajor()}
+            </h3>
+            <h3>
+                民族：${userinfo.getNation()}
+            </h3>
+        </div>
+        <div class="col-md-4 column">
+            <h3>
+                性别：${userinfo.getSno()}
+            </h3>
+            <h3>
+                班级：${userinfo.getKlass()}
+            </h3>
+            <h3>
+                外语语种：${userinfo.getForeignlanguage()}
             </h3>
         </div>
     </div>
     <div class="row clearfix" id="course" style="display: none;">
         <div class="col-md-4 column">
             <h3>
-                课程信息
+                联系电话：${userinfo.getPhone()}
             </h3>
             <h3>
-                课程信息
-            </h3>
-        </div>
-        <div class="col-md-4 column">
-            <h3>
-                课程信息
+                微信：${userinfo.getWechat()}
             </h3>
             <h3>
-                课程信息
+                出生日期：${userinfo.getBirthday()}
             </h3>
         </div>
         <div class="col-md-4 column">
             <h3>
-                课程信息
+                QQ：${userinfo.getQq()}
             </h3>
             <h3>
-                课程信息
+                籍贯：${userinfo.getProvince()}
+            </h3>
+            <h3>
+                毕业高中：${userinfo.getHighschool()}
+            </h3>
+        </div>
+        <div class="col-md-4 column">
+            <h3>
+                邮箱：${userinfo.getEmail()}
+            </h3>
+            <h3>
+                住址：${userinfo.getCity()}
             </h3>
         </div>
     </div>
@@ -133,7 +105,7 @@
                         <a href="#">基本信息</a>
                     </li>
                     <li>
-                        <a href="#" id="cour" onclick="change(this)">授课信息</a>
+                        <a href="#" id="cour" onclick="change(this)">其他信息</a>
                     </li>
                 </ul>
             </div>
@@ -141,54 +113,145 @@
         <div class="row clearfix" id="general" style="display: block;">
             <div class="col-md-4 column">
                 <h3>
-                    h3. 这是一套可视化布局系统.
+                    工号：${userinfo.getTno()}
                 </h3>
                 <h3>
-                    h3. 这是一套可视化布局系统.
-                </h3>
-            </div>
-            <div class="col-md-4 column">
-                <h3>
-                    h3. 这是一套可视化布局系统.
+                    工作年份：${userinfo.getComeyear()}
                 </h3>
                 <h3>
-                    h3. 这是一套可视化布局系统.
+                    毕业院校：${userinfo.getGraduateschool()}
                 </h3>
             </div>
             <div class="col-md-4 column">
                 <h3>
-                    h3. 这是一套可视化布局系统.
+                    姓名：${userinfo.getTname()}
                 </h3>
                 <h3>
-                    h3. 这是一套可视化布局系统.
+                    职称：${userinfo.getRank()}
+                </h3>
+                <h3>
+                    学位：${userinfo.getDegree()}
+                </h3>
+            </div>
+            <div class="col-md-4 column">
+                <h3>
+                    性别：${userinfo.getSex()}
+                </h3>
+                <h3>
+                    部门：${userinfo.getTdept()}
+                </h3>
+                <h3>
+                    办公室地址：${userinfo.getLocation()}
                 </h3>
             </div>
         </div>
         <div class="row clearfix" id="course" style="display: none;">
             <div class="col-md-4 column">
                 <h3>
-                    教师课程信息
+                    联系电话：${userinfo.getPhone()}
                 </h3>
                 <h3>
-                    教师课程信息
-                </h3>
-            </div>
-            <div class="col-md-4 column">
-                <h3>
-                    课程信息
+                    邮箱：${userinfo.getEmail()}
                 </h3>
                 <h3>
-                    课程信息
+                    研究方向：
                 </h3>
             </div>
             <div class="col-md-4 column">
                 <h3>
-                    课程信息
+                    微信号：${userinfo.getWechat()}
                 </h3>
                 <h3>
-                    课程信息
+                    籍贯：${userinfo.getProvince()}
+                </h3>
+            </div>
+            <div class="col-md-4 column">
+                <h3>
+                    QQ号：${userinfo.getQq()}
+                </h3>
+                <h3>
+                    家庭住址：${userinfo.getCity()}
                 </h3>
             </div>
         </div>
     </c:if>
+    <div class="row clearfix" style="margin-bottom: 30px;">
+        <div class="col-md-2 column">
+            <div class="form-group">
+                <h3 style="margin-top: 10px;margin-bottom: 20px;">修改资料</h3>
+                <c:if test="${userinfo.type=='student'}">
+                <select class="form-control" id="kind">
+                    <option value="sname">姓名</option>
+                    <option value="politicalstatus">政治面貌</option>
+                    <option value="phone">联系电话</option>
+                    <option value="qq">QQ</option>
+                    <option value="wechat">微信</option>
+                    <option value="city">住址</option>
+                </select>
+                <input type="hidden" value="student" id="identity">
+                <input type="hidden" value="${userinfo.getSno()}" id="account">
+                </c:if>
+                <c:if test="${userinfo.type=='teacher'}">
+                    <select class="form-control" id="kind">
+                        <option value="sname">姓名</option>
+                        <option value="rank">职称</option>
+                        <option value="location">办公室地址</option>
+                        <option value="qq">QQ</option>
+                        <option value="wechat">微信号</option>
+                        <option value="phone">联系电话</option>
+                        <option value="city">家庭住址</option>
+                        <option value="direction">研究方向</option>
+                    </select>
+                    <input type="hidden" value="teacher" id="identity">
+                    <input type="hidden" value="${userinfo.getTno()}" id="account">
+                </c:if>
+            </div>
+        </div>
+        <div class="col-md-2 column">
+            <div class="form-group">
+                <input class="form-control" type="text" id="value" placeholder="输入要修改的值" style="height: 34px;margin-top: 56px;">
+            </div>
+        </div>
+        <div class="col-md-2 column">
+            <div class="form-group">
+                <input type="button"
+                       value="提交修改"
+                       class="btn btn-default" onclick="submit()"
+                       style="height: 34px;margin-top: 56px;">
+            </div>
+        </div>
+        <div class="col-md-6 column">
+        </div>
+    </div>
 </div>
+<script>
+    function submit() {
+        var valueval=$("#value").val();
+        var kindval=$("#kind").val();
+        var identityval=$("#identity").val();
+        var accountval=$("#account").val();
+        if(valueval=="")
+        {
+            alert("请您填入要修改的信息！");
+        }
+        else
+        {
+            $.ajax({
+                url:"${pageContext.request.contextPath}/changeinfo",
+                data:{kind:kindval,identity:identityval,value:valueval,account:accountval},
+                type:'post',
+                success:function(data,textStatus,XMLHttpRequest){
+                    alert("修改成功！请重新登录更新信息！");
+                },
+                error: function(xhr,status,error) {
+                    if (xhr.status == 500) {
+                        alert("服务器异常！");
+                    }
+                    else{
+                        alert("插入失败！");
+                    }
+                }
+            });
+        }
+    }
+</script>

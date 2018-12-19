@@ -10,6 +10,80 @@ public class Teacher {
     private String sex;
     private String type="teacher";
 
+    private String province;
+    private String city;
+    private String comeyear;
+    private String qq;
+    private String wechat;
+    private String email;
+    private String graduateschool;
+    private String degree;
+    private String direction;
+
+    public String getWechat() {
+        return wechat;
+    }
+
+    public String getQq() {
+        return qq;
+    }
+
+    public String getProvince() {
+        return province;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getComeyear() {
+        return comeyear;
+    }
+
+    public String getDegree() {
+        return degree;
+    }
+
+    public String getGraduateschool() {
+        return graduateschool;
+    }
+
+    public void setWechat(String wechat) {
+        this.wechat = wechat;
+    }
+
+    public void setQq(String qq) {
+        this.qq = qq;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setComeyear(String comeyear) {
+        this.comeyear = comeyear;
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
+    }
+
+    public void setGraduateschool(String graduaeschool) {
+        this.graduateschool = graduaeschool;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -80,5 +154,13 @@ public class Teacher {
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+
+    public void setDirecition(String direction) {
+        this.direction=direction;
+    }
+    public String getDirection()
+    {
+        return this.direction;
     }
 }

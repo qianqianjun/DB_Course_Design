@@ -30,6 +30,9 @@
         <nav id="cdNav" class="navbar-collapse bs-navbar-collapse collapse" role="navigation" aria-expanded="false">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
+                    <a href="${pageContext.request.contextPath}/content">首页</a>
+                </li>
+                <li class="dropdown">
                     <a id="drop" href="" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">信息维护
                         <b class="caret"></b>
                     </a>

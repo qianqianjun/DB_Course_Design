@@ -30,6 +30,17 @@ public class TeacherDB {
                 teacher.setPhone(res.getString("phone"));
                 teacher.setSex(res.getString("sex"));
                 teacher.setLocation(res.getString("location"));
+
+                teacher.setWechat(res.getString("wechat"));
+                teacher.setQq(res.getString("qq"));
+                teacher.setProvince(res.getString("province"));
+                teacher.setGraduateschool(res.getString("graduateschool"));
+                teacher.setEmail(res.getString("email"));
+                teacher.setDegree(res.getString("degree"));
+                teacher.setComeyear(res.getString("comeyear"));
+                teacher.setCity(res.getString("city"));
+                teacher.setDirecition(res.getString("direction"));
+
                 return teacher;
             }
         }catch(Exception e)
@@ -67,6 +78,20 @@ public class TeacherDB {
                 return true;
         }
         return false;
+    }
+
+    public Boolean changeInfo(String sql,String account, String kind, String value) throws SQLException {
+        Connection connection=DB.getConnection();
+        sql+=kind+"=? where tno=?";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,value);
+        ps.setString(2,account);
+        Integer rows=ps.executeUpdate();
+        DB.close(connection,ps);
+        if(rows>0)
+            return true;
+        else
+            return false;
     }
 }
 

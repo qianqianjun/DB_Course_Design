@@ -1,8 +1,4 @@
 package model;
-/*insert into student
-        (sno,sname,collage,sex,major,klass)
-        values
-        ("2016014302","高谦","信息科学与技术学院","男","计算机科学与技术","计科1601")*/
 public class Student {
     private Integer id;
     private String sno;
@@ -12,6 +8,20 @@ public class Student {
     private String major;
     private String klass;
     private String type="student";
+
+
+    private String province;
+    private String city;
+    private String birthday;
+    private String phone;
+    private String qq;
+    private String wechat;
+    private String email;
+    private String politicalstatus;
+    private String nation;
+    private String highschool;
+    private String foreignlanguage;
+    private String status;
 
     public String getType() {
         return type;
@@ -75,5 +85,101 @@ public class Student {
 
     public void setSno(String sno) {
         this.sno = sno;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getNation() {
+        return nation;
+    }
+
+    public String getForeignlanguage() {
+        return foreignlanguage;
+    }
+
+    public String getHighschool() {
+        return highschool;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getPoliticalstatus() {
+        return politicalstatus;
+    }
+
+    public String getProvince() {
+        return province;
+    }
+
+    public String getQq() {
+        return qq;
+    }
+
+    public String getWechat() {
+        return wechat;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setHighschool(String highschool) {
+        this.highschool = highschool;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setNation(String nation) {
+        this.nation = nation;
+    }
+
+    public void setForeignlanguage(String foreignlanguage) {
+        this.foreignlanguage = foreignlanguage;
+    }
+
+    public void setPoliticalstatus(String politicalstatus) {
+        this.politicalstatus = politicalstatus;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
+    }
+
+    public void setQq(String qq) {
+        this.qq = qq;
+    }
+
+    public void setWechat(String wechat) {
+        this.wechat = wechat;
     }
 }
