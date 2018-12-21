@@ -37,7 +37,7 @@
             <li class="col-md-6 col-sm-6 col-xs-6">
                 <a href="#" target="_blank">
                     <img src="${pageContext.request.contextPath}/images/ico_but42.png">
-                    <h5>成绩管理</h5>
+                    <h5>学生信息查看</h5>
                 </a>
             </li>
         </ul>

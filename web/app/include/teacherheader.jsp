@@ -39,10 +39,16 @@
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li>
-                            <a tabindex="-1" href="${pageContext.request.contextPath}/app/managepersonalinfo.jsp">个人信息维护</a>
+                            <a href="${pageContext.request.contextPath}/app/managepersonalinfo.jsp">成绩管理</a>
                         </li>
                         <li>
-                            <a tabindex="-1" href="${pageContext.request.contextPath}/app/changepassword.jsp">修改密码</a>
+                            <a href="${pageContext.request.contextPath}/app/managepersonalinfo.jsp">学生信息查看</a>
+                        </li>
+                        <li>
+                            <a href="${pageContext.request.contextPath}/app/managepersonalinfo.jsp">个人信息维护</a>
+                        </li>
+                        <li>
+                            <a href="${pageContext.request.contextPath}/app/changepassword.jsp">修改密码</a>
                         </li>
                     </ul>
                 </li>
@@ -52,10 +58,10 @@
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li>
-                            <a tabindex="-1" target="_blank">授课查看</a>
+                            <a target="_blank">授课查看</a>
                         </li>
                         <li>
-                            <a tabindex="-1" href="${pageContext.request.contextPath}/app/addcourse.jsp">添加新课程</a>
+                            <a href="${pageContext.request.contextPath}/app/addcourse.jsp">添加新课程</a>
                         </li>
                     </ul>
                 </li>

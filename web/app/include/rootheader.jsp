@@ -63,7 +63,7 @@
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li>
-                            <a target="_blank" target="_blank">选课清单</a>
+                            <a target="_blank" href="${pageContext.request.contextPath}/app/root/createlist.jsp">创建清单</a>
                         </li>
                         <li>
                             <a href="" target="_blank">运行控制</a>

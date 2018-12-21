@@ -122,3 +122,48 @@
     margin-bottom: 10px;
     width: 80%;
 }
+
+.selection_list{
+    margin-bottom: 40px;
+}
+.selection_list li{
+    font-size: 19px;
+    display: inline;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #91ea91;
+    color: #fff;
+}
+.add_cname{
+    font-size: 18px;
+    display: inline-block;
+    width: 24%;
+}
+.add_cno{
+    font-size: 18px;
+    display: inline-block;
+    width: 23%;
+}
+.add_semester{
+    font-size: 18px;
+    display: inline-block;
+    width: 27%;
+}
+.add_capacity{
+    font-size: 18px;
+    display: inline-block;
+    width: 24%;
+}
+.add_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.add_title h3{
+    width: 24%;
+    display: inline-block;
+}
+.course_item{
+    background-color: #c4eae0;
+    padding: 5px;
+    margin-bottom: 5px;
+}
