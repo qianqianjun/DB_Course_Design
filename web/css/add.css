@@ -167,3 +167,30 @@
     padding: 5px;
     margin-bottom: 5px;
 }
+.select_list_item{
+    font-size: 10px;
+    background-color: #7dbbb9;
+    padding: 8px;
+    width: 84%;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.select_list_control{
+    font-size: 20px;
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: -3px;
+    right: 5px;
+}
+.semester_name{
+    font-size: 17px;
+    display: inline-block;
+    width: 30%;
+}
+.major_name{
+    font-size: 17px;
+    display: inline-block;
+    width: 30%;
+}

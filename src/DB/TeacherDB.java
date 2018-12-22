@@ -40,7 +40,6 @@ public class TeacherDB {
                 teacher.setComeyear(res.getString("comeyear"));
                 teacher.setCity(res.getString("city"));
                 teacher.setDirecition(res.getString("direction"));
-
                 return teacher;
             }
         }catch(Exception e)

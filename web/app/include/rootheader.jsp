@@ -66,7 +66,7 @@
                             <a target="_blank" href="${pageContext.request.contextPath}/app/root/createlist.jsp">创建清单</a>
                         </li>
                         <li>
-                            <a href="" target="_blank">运行控制</a>
+                            <a href="${pageContext.request.contextPath}/runingcontrol" target="_blank">运行控制</a>
                         </li>
                     </ul>
                 </li>

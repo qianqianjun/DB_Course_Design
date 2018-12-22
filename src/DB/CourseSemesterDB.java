@@ -1,6 +1,7 @@
 package DB;
 
 import model.CourseSemester;
+import view.Course_select;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -65,6 +66,53 @@ public class CourseSemesterDB {
             courseSemester.setStatus(resultSet.getInt("status"));
             result.add(courseSemester);
         }
+        return result;
+    }
+
+    public ArrayList<Course_select> select_course(String semester, String cnolist,String sno) throws SQLException {
+        Connection connection=DB.getConnection();
+
+
+        String done_sql="select cno from study_course where sno=? and semester=?";
+        PreparedStatement done_ps=connection.prepareStatement(done_sql);
+        done_ps.setString(1,sno);
+        done_ps.setString(2,semester);
+        ResultSet resultset= done_ps.executeQuery();
+        ArrayList<String> cno_done_list=new ArrayList<String>();
+        while(resultset.next())
+            cno_done_list.add(resultset.getString("cno"));
+        DB.close(resultset);
+
+
+        String sql="select course_semester.*,course.cname,course.introduction,teacher.tname from course_semester " +
+                "left join course on course.cno=course_semester.cno " +
+                "left join teacher on course_semester.tno=teacher.tno " +
+                "where course_semester.semester=? and  course_semester.cno in "+cnolist+" and course_semester.capacity>0";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,semester);
+        ResultSet resultSet=ps.executeQuery();
+        ArrayList<Course_select> result=new ArrayList<Course_select>();
+        while(resultSet.next())
+        {
+            Course_select course_select=new Course_select();
+            course_select.setCno(resultSet.getString("cno"));
+            course_select.setCname(resultSet.getString("cname"));
+            course_select.setTno(resultSet.getString("tno"));
+            course_select.setSemester(resultSet.getString("semester"));
+            course_select.setTname(resultSet.getString("tname"));
+            course_select.setCapacity(resultSet.getInt("capacity"));
+            course_select.setLocation(resultSet.getString("location"));
+            course_select.setStatus(resultSet.getString("status"));
+            course_select.setWeekbegin(resultSet.getInt("weekbegin"));
+            course_select.setWeekend(resultSet.getInt("weekend"));
+            course_select.setIntroduction(resultSet.getString("introduction"));
+            if(cno_done_list.indexOf(course_select.getCno())==-1)
+                course_select.setIsselected("0");
+            else
+                course_select.setIsselected("1");
+            result.add(course_select);
+        }
+        DB.close(connection,ps,resultSet);
         return result;
     }
 }

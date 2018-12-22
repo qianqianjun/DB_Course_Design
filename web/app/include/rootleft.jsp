@@ -11,7 +11,7 @@
                 </a>
             </li>
             <li class="col-md-6 col-sm-6 col-xs-6">
-                <a target="_blank" href="${pageContext.request.contextPath}">
+                <a target="_blank" href="${pageContext.request.contextPath}/runingcontrol">
                     <img src="${pageContext.request.contextPath}/images/ico_but28.png">
                     <h5>运行控制</h5>
                 </a>
@@ -35,9 +35,9 @@
                 </a>
             </li>
             <li class="col-md-6 col-sm-6 col-xs-6">
-                <a target="_blank">
+                <a target="_blank" href="${pageContext.request.contextPath}/app/root/createlist.jsp">
                     <img src="${pageContext.request.contextPath}/images/ico_but42.png">
-                    <h5>选课清单</h5>
+                    <h5>创建选课</h5>
                 </a>
             </li>
         </ul>

@@ -4,6 +4,7 @@ public class SelectList {
     public String semester;
     public String cno;
     public String major;
+    private String status;
 
     public String getSemester() {
         return semester;
@@ -27,5 +28,13 @@ public class SelectList {
 
     public void setMajor(String major) {
         this.major = major;
+    }
+
+    public void setStatus(String status) {
+        this.status=status;
+    }
+    public String getStatus()
+    {
+        return this.status;
     }
 }

@@ -46,8 +46,8 @@
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li><a tabindex="-1">自主选课</a></li>
-                        <li><a tabindex="-1" href="${pageContext.request.contextPath}/app/student/sendmessage.jsp">联系老师</a></li>
+                        <li><a href="${pageContext.request.contextPath}/select_course" target="_blank">自主选课</a></li>
+                        <li><a href="${pageContext.request.contextPath}/app/student/sendmessage.jsp">联系老师</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">

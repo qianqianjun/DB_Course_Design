@@ -45,4 +45,34 @@ public class DB {
             e.printStackTrace();
         }
     }
+    public static void close(Statement st)
+    {
+        try {
+            st.close();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+    public static void close(Connection connection)
+    {
+        try {
+            connection.close();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+    public static void close(ResultSet resultSet)
+    {
+        try {
+            resultSet.close();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 }

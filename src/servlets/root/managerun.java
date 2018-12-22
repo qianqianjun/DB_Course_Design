@@ -10,26 +10,30 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/addselectlist")
-public class addselectlist extends HttpServlet {
+@WebServlet("/managerun")
+public class managerun extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("text/html");
+        String type=request.getParameter("type");
         String semester=request.getParameter("semester");
         String major=request.getParameter("major");
-        String cnoset=request.getParameter("cno");
-        String cno="("+cnoset.substring(1,cnoset.length()-1)+")";
         SelectListDB selectListDB=new SelectListDB();
-        Boolean ok= true;
-        Integer status=200;
+        Boolean ok= null;
         try {
-            ok = selectListDB.add(semester,major,cno);
+            ok = selectListDB.changeStatus(type,semester,major);
         } catch (SQLException e) {
             e.printStackTrace();
-            status=500;
         }
-        if(!ok)
-            status=502;
-        response.setStatus(status);
+        if(ok)
+            response.setStatus(200);
+        else{
+            response.setStatus(501);
+        }
     }
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
 }

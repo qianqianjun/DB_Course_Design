@@ -44,16 +44,6 @@
         else
         {
             var majorvalue=document.getElementById("major_create").value;
-            <%--$.post("${pageContext.request.contextPath}/addselectlist",--%>
-                <%--{semester:window.data_temp_global[0].semester,cno:JSON.stringify(window.selection_set),major:majorvalue},function (data,status) {--%>
-                <%--if(status==200){--%>
-                    <%--alert("添加成功！");--%>
-                    <%--window.location.href="${pageContext.request.contextPath}/app/root/createlist.jsp";--%>
-                <%--}--%>
-                <%--else{--%>
-                    <%--alert("添加失败！");--%>
-                <%--}--%>
-            <%--});--%>
             $.ajax({
                 url:"${pageContext.request.contextPath}/addselectlist",
                 data:{semester:window.data_temp_global[0].semester,cno:JSON.stringify(window.selection_set),major:majorvalue},
