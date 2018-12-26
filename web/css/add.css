@@ -194,3 +194,25 @@
     display: inline-block;
     width: 30%;
 }
+.cname_have_selected{
+    font-size: 18px;
+    margin-right: 30px;
+    line-height: 34px;
+    display: inline-block;
+}
+.have_selected{
+    border: 1px solid #00ffbc;
+    border-radius: 7px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    background-color: #00f0ff1f;
+}
+.clocation_have_selected{
+    font-size: 18px;
+    margin-right: 30px;
+    line-height: 34px;
+    display: inline-block;
+    float: right;
+}

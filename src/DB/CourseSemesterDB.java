@@ -2,9 +2,10 @@ package DB;
 
 import model.CourseSemester;
 import view.Course_select;
-
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
+
 public class CourseSemesterDB {
     public CourseSemester getBycno(String cno) throws SQLException {
         Connection connection=DB.getConnection();
@@ -69,7 +70,7 @@ public class CourseSemesterDB {
         return result;
     }
 
-    public ArrayList<Course_select> select_course(String semester, String cnolist,String sno) throws SQLException {
+    public ArrayList<Course_select> select_course(String semester, String cnolist,String sno,String cno,String cname,String college,String capacity) throws SQLException {
         Connection connection=DB.getConnection();
 
 
@@ -87,8 +88,42 @@ public class CourseSemesterDB {
         String sql="select course_semester.*,course.cname,course.introduction,teacher.tname from course_semester " +
                 "left join course on course.cno=course_semester.cno " +
                 "left join teacher on course_semester.tno=teacher.tno " +
-                "where course_semester.semester=? and  course_semester.cno in "+cnolist+" and course_semester.capacity>0";
+                "where course_semester.semester=? and  course_semester.cno in "+cnolist+" and 1 ";
+
+        String cno_sql=" and 1 ";
+        String cname_sql=" and 1 ";
+        String college_sql=" and 1 ";
+        String capaticy_sql=" and 1 ";
+        List<String> parselist=new ArrayList<String>();
+        parselist.add(semester);
+        if(!cno.equals(""))
+        {
+            cno_sql=" and course.cno= ?";
+            parselist.add(cno);
+        }
+        else
+        {
+            if(!cname.equals(""))
+            {
+                cname_sql=" and course.cname like ? ";
+                parselist.add("%"+cname+"%");
+            }
+            if(!college.equals("all"))
+            {
+                college_sql=" and course.dept= ? ";
+                parselist.add(college);
+            }
+            if(!capacity.equals("all"))
+            {
+                capaticy_sql=" and course_semester.capacity "+capacity+" 0 ";
+            }
+        }
+        sql+=cno_sql+cname_sql+college_sql+capaticy_sql;
         PreparedStatement ps=connection.prepareStatement(sql);
+        for(int i=0;i<parselist.size();i++)
+        {
+            ps.setString(i+1,parselist.get(i));
+        }
         ps.setString(1,semester);
         ResultSet resultSet=ps.executeQuery();
         ArrayList<Course_select> result=new ArrayList<Course_select>();
