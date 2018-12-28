@@ -7,24 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a37a5ba4-dfed-4a96-8f5b-ecba5fb8fde3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/servlets/student/course_table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/student/gradelist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/teacher/studentlist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/StudentInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/student/course_table.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/student/gradelist.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/teacher/studentlist.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/css/course_table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/CourseTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/CourseSemesterDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/CourseSemesterDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DB/StudyCourseDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/StudyCourseDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/StudyCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/StudyCourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/content.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/include/studentheader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/studentheader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/include/stuleft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/stuleft.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/include/sturight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/sturight.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/include/teacherheader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/teacherheader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/include/teacherleft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/teacherleft.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CourseSemester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/CourseSemester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/student/course_table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/student/course_table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/student/course_table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/student/course_table.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +42,7 @@
     <session id="-1238552046">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="39" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="5" />
@@ -77,10 +65,10 @@
         <counts>
           <entry key="class" value="9" />
           <entry key="css" value="38" />
-          <entry key="java" value="309" />
+          <entry key="java" value="315" />
           <entry key="jpg" value="2" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="275" />
+          <entry key="jsp" value="276" />
           <entry key="png" value="2" />
           <entry key="tld" value="1" />
           <entry key="ts" value="1" />
@@ -93,8 +81,8 @@
           <entry key="CLASS" value="9" />
           <entry key="CSS" value="38" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="309" />
-          <entry key="JSP" value="275" />
+          <entry key="JAVA" value="315" />
+          <entry key="JSP" value="276" />
           <entry key="JavaScript" value="2" />
           <entry key="TypeScript" value="1" />
           <entry key="XHTML" value="1" />
@@ -105,17 +93,17 @@
         <counts>
           <entry key="css" value="1917" />
           <entry key="dummy" value="30" />
-          <entry key="java" value="96163" />
-          <entry key="jsp" value="48337" />
+          <entry key="java" value="98125" />
+          <entry key="jsp" value="53665" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1917" />
-          <entry key="HTML" value="4" />
-          <entry key="JAVA" value="96157" />
-          <entry key="JSP" value="48333" />
+          <entry key="HTML" value="7" />
+          <entry key="JAVA" value="98119" />
+          <entry key="JSP" value="53658" />
           <entry key="PLAIN_TEXT" value="30" />
           <entry key="SQL" value="6" />
           <entry key="XML" value="13" />
@@ -131,26 +119,96 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/student/course_table.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/app/include/htmlHead.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="21" column="97" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
+            <state relative-caret-position="-311">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DB/StudyCourseDB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="300" column="19" lean-forward="true" selection-start-line="300" selection-start-column="19" selection-end-line="300" selection-end-column="19" />
+              <folding>
+                <element signature="e#10417#10430#0" expanded="true" />
+                <element signature="e#10998#11011#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/CourseTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <folding>
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#765#766#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#893#894#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1081#1082#0" expanded="true" />
+                <element signature="e#1111#1112#0" expanded="true" />
+                <element signature="e#1148#1149#0" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1288#1289#0" expanded="true" />
+                <element signature="e#1324#1325#0" expanded="true" />
+                <element signature="e#1371#1372#0" expanded="true" />
+                <element signature="e#1409#1410#0" expanded="true" />
+                <element signature="e#1460#1461#0" expanded="true" />
+                <element signature="e#1502#1503#0" expanded="true" />
+                <element signature="e#1544#1545#0" expanded="true" />
+                <element signature="e#1578#1579#0" expanded="true" />
+                <element signature="e#1620#1621#0" expanded="true" />
+                <element signature="e#1654#1655#0" expanded="true" />
+                <element signature="e#1692#1693#0" expanded="true" />
+                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#1771#1772#0" expanded="true" />
+                <element signature="e#1811#1812#0" expanded="true" />
+                <element signature="e#1859#1860#0" expanded="true" />
+                <element signature="e#1899#1900#0" expanded="true" />
+                <element signature="e#1947#1948#0" expanded="true" />
+                <element signature="e#1987#1988#0" expanded="true" />
+                <element signature="e#2032#2033#0" expanded="true" />
+                <element signature="e#2068#2069#0" expanded="true" />
+                <element signature="e#2106#2107#0" expanded="true" />
+                <element signature="e#2136#2137#0" expanded="true" />
+                <element signature="e#2183#2184#0" expanded="true" />
+                <element signature="e#2221#2222#0" expanded="true" />
+                <element signature="e#2272#2273#0" expanded="true" />
+                <element signature="e#2314#2315#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/app/student/course_table.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+            <state relative-caret-position="714">
+              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,15 +219,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="jsf" />
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>etGradua</find>
       <find>qq</find>
       <find>getprovince</find>
       <find>setpr</find>
@@ -199,6 +256,7 @@
       <find>学生信息</find>
       <find>成绩</find>
       <find>课表</find>
+      <find>arr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,8 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DB/TeacherDB.java" />
-        <option value="$PROJECT_DIR$/src/model/SelectList.java" />
         <option value="$PROJECT_DIR$/web/app/root/createlist.jsp" />
         <option value="$PROJECT_DIR$/web/app/include/rootleft.jsp" />
         <option value="$PROJECT_DIR$/src/servlets/root/addselectlist.java" />
@@ -249,15 +305,17 @@
         <option value="$PROJECT_DIR$/src/servlets/student/gradelist.java" />
         <option value="$PROJECT_DIR$/out/artifacts/DbCourseDesign_war_exploded/css/add.css" />
         <option value="$PROJECT_DIR$/web/css/add.css" />
-        <option value="$PROJECT_DIR$/src/DB/StudyCourseDB.java" />
         <option value="$PROJECT_DIR$/web/app/student/gradelist.jsp" />
         <option value="$PROJECT_DIR$/web/app/include/sturight.jsp" />
         <option value="$PROJECT_DIR$/web/app/include/stuleft.jsp" />
         <option value="$PROJECT_DIR$/web/app/include/studentheader.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/student/course_table.java" />
         <option value="$PROJECT_DIR$/web/css/course_table.css" />
-        <option value="$PROJECT_DIR$/web/app/student/course_table.jsp" />
         <option value="$PROJECT_DIR$/web/app/include/htmlHead.jsp" />
+        <option value="$PROJECT_DIR$/src/model/CourseSemester.java" />
+        <option value="$PROJECT_DIR$/src/view/CourseTable.java" />
+        <option value="$PROJECT_DIR$/src/DB/StudyCourseDB.java" />
+        <option value="$PROJECT_DIR$/src/servlets/student/course_table.java" />
+        <option value="$PROJECT_DIR$/web/app/student/course_table.jsp" />
       </list>
     </option>
   </component>
@@ -282,7 +340,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="530" />
     <option name="y" value="20" />
     <option name="width" value="1315" />
@@ -311,6 +369,19 @@
               <item name="DbCourseDesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="servlets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DbCourseDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DbCourseDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="servlets" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DbCourseDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DbCourseDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DbCourseDesign" type="b2602c69:ProjectViewProjectNode" />
@@ -348,7 +419,7 @@
     <property name="SearchEverywhereHistoryKey" value="grade&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/student/gradelist.jsp&#10;newcourse&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/newcourse.jsp&#10;stu&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/studentheader.jsp&#10;stuleft&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/stuleft.jsp&#10;sturi&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/sturight.jsp&#10;studenthe&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/studentheader.jsp&#10;add&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/css/add.css&#10;runing&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/runingcontrol.jsp&#10;teacherheader&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherheader.jsp&#10;teacher&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherleft.jsp&#10;content&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/content.java&#10;login&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/publicfun/LoginServlet.java&#10;root&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootheader.jsp&#10;courseinfo&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/courseinfo.jsp&#10;teachlis&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/teacher/teachlist.jsp&#10;content.jsp&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/content.jsp&#10;teacherright&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherright.jsp&#10;roothea&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootheader.jsp&#10;teacherhea&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherheader.jsp&#10;teacherleft&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherleft.jsp&#10;searchclass&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/course/searchclass.java&#10;teacherri&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherright.jsp&#10;noticedetail&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/student/noticedetail.jsp&#10;searchnotice&#9;PSI&#9;JAVA://servlets.root.searchnotice&#10;student&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/studentheader.jsp&#10;stule&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/stuleft.jsp&#10;co&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/content.jsp&#10;select&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/student/select_course.java&#10;studentheader&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/studentheader.jsp&#10;search&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/root/searchselectlist.java&#10;add.css&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/css/add.css&#10;searchlist&#9;null&#9;null&#10;course&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/newcourse.jsp&#10;rootleft&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootleft.jsp&#10;run&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/root/runingcontrol.java&#10;rootl&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootleft.jsp&#10;rooth&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootheader.jsp&#10;create&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/createlist.jsp&#10;list&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/createlist.jsp&#10;teacherdb&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/DB/TeacherDB.java&#10;teac&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/model/Teacher.java&#10;tea&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/DB/TeacherDB.java&#10;changeinfo&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/publicfun/changeinfo.java&#10;searchnew&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/course/searchnew.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545995436677" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546016581877" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JDBC" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -605,12 +676,12 @@
       <workItem from="1545885751634" duration="21552000" />
       <workItem from="1545961871962" duration="9316000" />
       <workItem from="1545973426653" duration="21282000" />
-      <workItem from="1545996358635" duration="229000" />
+      <workItem from="1545996358635" duration="17572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="370528000" />
+    <option name="totallyTimeSpent" value="387871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,7 +694,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.28652483" side_tool="true" weight="0.16353887" />
       <window_info id="Designer" order="1" />
@@ -633,7 +703,7 @@
       <window_info id="Favorites" order="5" sideWeight="0.33818182" side_tool="true" weight="0.13941018" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" sideWeight="0.30780143" side_tool="true" weight="0.19839142" />
-      <window_info active="true" content_ui="combo" id="Project" order="8" sideWeight="0.6921986" visible="true" weight="0.20442359" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" sideWeight="0.6921986" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.45815602" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.40141845" />
@@ -648,7 +718,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" x="22" y="183" width="1492" height="457" id="JRebel Executor" order="14" sideWeight="0.4966488" visible="true" weight="0.0" />
+      <window_info anchor="bottom" x="22" y="183" width="1492" height="457" id="JRebel Executor" order="14" sideWeight="0.4966488" weight="0.0" />
       <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5033512" side_tool="true" weight="0.635461" />
       <window_info anchor="bottom" id="Problems" order="16" weight="0.2141844" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -670,8 +740,8 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.33818182" side_tool="true" weight="0.13941018" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.30835736" side_tool="true" weight="0.22989276" />
-      <window_info active="true" content_ui="combo" id="Project" order="8" sideWeight="0.69164264" visible="true" weight="0.19839142" />
+      <window_info id="Web" order="7" sideWeight="0.30780143" side_tool="true" weight="0.19839142" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" sideWeight="0.6921986" visible="true" weight="0.15482573" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.45815602" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.40141845" />
@@ -708,13 +778,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/production/DbCourseDesign/view/Course_select.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/DbCourseDesign/DB/CourseDB.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -850,17 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/CourseSemester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding>
-            <element signature="e#998#999#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,17 +1110,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/StudyCourseDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1096">
-          <caret line="247" column="35" lean-forward="true" selection-start-line="247" selection-start-column="35" selection-end-line="247" selection-end-column="35" />
-          <folding>
-            <element signature="e#9692#9700#0" expanded="true" />
-            <element signature="e#10324#10337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/include/sturight.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -1125,24 +1166,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/student/course_table.jsp">
+    <entry file="file://$PROJECT_DIR$/web/app/include/htmlHead.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        <state relative-caret-position="158">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/CourseSemester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/student/course_table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="-311">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/include/htmlHead.jsp">
+    <entry file="file://$PROJECT_DIR$/src/DB/StudyCourseDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="21" column="97" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
+        <state relative-caret-position="487">
+          <caret line="300" column="19" lean-forward="true" selection-start-line="300" selection-start-column="19" selection-end-line="300" selection-end-column="19" />
+          <folding>
+            <element signature="e#10417#10430#0" expanded="true" />
+            <element signature="e#10998#11011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/CourseTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1578#1579#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1771#1772#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1859#1860#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1947#1948#0" expanded="true" />
+            <element signature="e#1987#1988#0" expanded="true" />
+            <element signature="e#2032#2033#0" expanded="true" />
+            <element signature="e#2068#2069#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2183#2184#0" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
+            <element signature="e#2272#2273#0" expanded="true" />
+            <element signature="e#2314#2315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/student/course_table.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

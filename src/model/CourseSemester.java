@@ -12,6 +12,42 @@ public class CourseSemester {
 
     //以下是视图属性
     private String cname;
+    private String tname;
+    private Integer runday;
+    private Integer begintime;
+    private Integer endtime;
+
+    public String getTname() {
+        return tname;
+    }
+
+    public Integer getBegintime() {
+        return begintime;
+    }
+
+    public Integer getEndtime() {
+        return endtime;
+    }
+
+    public Integer getRunday() {
+        return runday;
+    }
+
+    public void setTname(String tname) {
+        this.tname = tname;
+    }
+
+    public void setBegintime(Integer begintime) {
+        this.begintime = begintime;
+    }
+
+    public void setEndtime(Integer endtime) {
+        this.endtime = endtime;
+    }
+
+    public void setRunday(Integer runday) {
+        this.runday = runday;
+    }
 
     public void setCname(String cname) {
         this.cname = cname;

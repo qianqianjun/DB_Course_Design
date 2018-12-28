@@ -1,7 +1,9 @@
 package DB;
 
 import model.Course;
+import model.CourseSemester;
 import model.StudyCourse;
+import view.CourseTable;
 import view.Course_select;
 import view.StudentInfo;
 
@@ -261,6 +263,38 @@ public class StudyCourseDB {
             temp.setCno(set.getString("cno"));
             temp.setSemester(set.getString("semester"));
             temp.setCname(set.getString("cname"));
+            res.add(temp);
+        }
+        DB.close(connection,ps,set);
+        return res;
+    }
+
+    public ArrayList<CourseTable> getCourseTable(String semester, String sno) throws SQLException {
+        ArrayList<CourseTable> res=new ArrayList<CourseTable>();
+        Connection connection=DB.getConnection();
+        String sql="select course.cname,teacher.tname,course_semester.*,course_runtime.runday,course_runtime.begintime,course_runtime.endtime from study_course\n" +
+                "left join course_semester on study_course.cno=course_semester.cno\n" +
+                "left join teacher on course_semester.tno=teacher.tno\n" +
+                "left join course on study_course.cno=course.cno\n" +
+                "left join course_runtime on course_semester.cno=course_runtime.cno and course_semester.semester=course_runtime.semester\n" +
+                "where study_course.sno=? and study_course.semester=?";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,sno);
+        ps.setString(2,semester);
+        ResultSet set=ps.executeQuery();
+        while(set.next())
+        {
+            CourseTable temp=new CourseTable();
+            temp.setCname(set.getString("cname"));
+            temp.setTname(set.getString("tname"));
+            temp.setLocation(set.getString("location"));
+            temp.setWeekbegin(set.getInt("weekbegin"));
+            temp.setWeekend(set.getInt("weekend"));
+            temp.setSemester(set.getString("semester"));
+            temp.setCno(set.getString("cno"));
+            temp.setRunday(set.getInt("runday"));
+            temp.setBegintime(set.getInt("begintime"));
+            temp.setEndtime(set.getInt("endtime"));
             res.add(temp);
         }
         DB.close(connection,ps,set);
