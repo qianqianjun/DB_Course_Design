@@ -23,13 +23,13 @@
                 </a>
             </li>
             <li class="col-md-6 col-sm-6 col-xs-6">
-                <a target="_blank" href="">
+                <a target="_blank" href="${pageContext.request.contextPath}/course_table">
                     <img src="${pageContext.request.contextPath}/images/ico_but31.png">
                     <h5>查看课表</h5>
                 </a>
             </li>
             <li class="col-md-6 col-sm-6 col-xs-6">
-                <a>
+                <a href="${pageContext.request.contextPath}/gradelist" target="_blank">
                     <img src="${pageContext.request.contextPath}/images/ico_but18.png">
                     <h5>成绩查询</h5>
                 </a>

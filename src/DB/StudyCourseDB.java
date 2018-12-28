@@ -3,11 +3,10 @@ package DB;
 import model.Course;
 import model.StudyCourse;
 import view.Course_select;
+import view.StudentInfo;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import javax.xml.transform.Result;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +23,7 @@ public class StudyCourseDB {
         {
             result+="'"+resultSet.getString("cno")+"',";
         }
+        DB.close(connection,ps,resultSet);
         result=result.substring(0,result.length()-1)+")";
         return result;
     }
@@ -129,6 +129,7 @@ public class StudyCourseDB {
             temp.setLocation(resultSet.getString("location"));
             result.add(temp);
         }
+        DB.close(connection,ps,resultSet);
         return  result;
     }
 
@@ -164,8 +165,105 @@ public class StudyCourseDB {
         ps.setString(3,cno);
         ps.setString(4,semester);
         Integer rows=ps.executeUpdate();
+        DB.close(connection,ps);
         if(rows>0)
             return true;
         return false;
+    }
+
+    public List<StudyCourse> getGradeList(String sno, String semester) throws SQLException {
+        List<StudyCourse> res=new ArrayList<StudyCourse>();
+        Connection connection=DB.getConnection();
+        String sql="select course.cname,study_course.* from study_course left join course on study_course.cno=course.cno " +
+                "where study_course.sno=? and study_course.semester=? and study_course.grade is not null";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,sno);
+        ps.setString(2,semester);
+        ResultSet set=ps.executeQuery();
+        while(set.next())
+        {
+            StudyCourse temp=new StudyCourse();
+            temp.setGrade(set.getString("grade"));
+            temp.setCno(set.getString("cno"));
+            temp.setSemester(set.getString("semester"));
+            temp.setSno(sno);
+            temp.setCname(set.getString("cname"));
+            res.add(temp);
+        }
+        DB.close(connection,ps,set);
+        return res;
+    }
+
+    public ArrayList<StudentInfo> getStudentList(String sno, String cno, String semester,String cname) throws SQLException {
+        String sql="select student.sname,student.sex,student.college,student.major,student.klass,student.sno from study_course " +
+                "left join student on study_course.sno=student.sno " +
+                "where study_course.cno=? and study_course.semester=? ";
+        String sqlsno=" and 1 ";
+        List<String> par=new ArrayList<String>();
+        par.add(cno);
+        par.add(semester);
+        if(!sno.equals(""))
+        {
+            par.add(sno);
+            sqlsno=" and student.sno=? ";
+        }
+        sql+=sqlsno;
+        Connection connection=DB.getConnection();
+        PreparedStatement ps=connection.prepareStatement(sql);
+        for(int i=0;i<par.size();i++)
+            ps.setString(i+1,par.get(i));
+        ResultSet set=ps.executeQuery();
+        ArrayList<StudentInfo> res=new ArrayList<StudentInfo>();
+        while(set.next())
+        {
+            StudentInfo temp=new StudentInfo();
+            temp.setCname(cname);
+            temp.setCollege(set.getString("college"));
+            temp.setKlass(set.getString("klass"));
+            temp.setMajor(set.getString("major"));
+            temp.setSex(set.getString("sex"));
+            temp.setSname(set.getString("sname"));
+            temp.setSno(set.getString("sno"));
+            res.add(temp);
+        }
+        DB.close(connection,ps,set);
+        return res;
+    }
+
+    public ArrayList<StudyCourse> searchGrade(String cno, String cname, String semester) throws SQLException {
+        String sql="select course.cname,study_course.* from study_course left join course on study_course.cno=course.cno " +
+                "where study_course.semester=? and study_course.grade is not null ";
+        String cnamesql=" and 1 ";
+        String cnosql=" and 1 ";
+        ArrayList<String> par=new ArrayList<String>();
+        par.add(semester);
+        if(!cno.equals(""))
+        {
+            cnosql=" and course.cno = ? ";
+            par.add(cno);
+        }
+        if(!cname.equals(""))
+        {
+            cnamesql=" and course.cname like ? ";
+            par.add("%"+cname+"%");
+        }
+        sql+=cnosql+cnamesql;
+        Connection connection=DB.getConnection();
+        PreparedStatement ps=connection.prepareStatement(sql);
+        for(int i=0;i<par.size();i++)
+            ps.setString(i+1,par.get(i));
+        ResultSet set=ps.executeQuery();
+        ArrayList<StudyCourse> res=new ArrayList<StudyCourse>();
+        while(set.next())
+        {
+            StudyCourse temp=new StudyCourse();
+            temp.setGrade(set.getString("grade"));
+            temp.setCno(set.getString("cno"));
+            temp.setSemester(set.getString("semester"));
+            temp.setCname(set.getString("cname"));
+            res.add(temp);
+        }
+        DB.close(connection,ps,set);
+        return res;
     }
 }

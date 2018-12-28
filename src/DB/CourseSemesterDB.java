@@ -175,4 +175,24 @@ public class CourseSemesterDB {
         DB.close(connection,ps,set);
         return res;
     }
+
+    public ArrayList<CourseSemester> getCourseList(String tno, String semester) throws SQLException {
+        Connection connection=DB.getConnection();
+        String sql="select course.cname,course_semester.* from course_semester left join course on course_semester.cno=course.cno " +
+                "where course_semester.tno=? and course_semester.semester=?";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,tno);
+        ps.setString(2,semester);
+        ResultSet set=ps.executeQuery();
+        ArrayList<CourseSemester> res=new ArrayList<CourseSemester>();
+        while(set.next())
+        {
+            CourseSemester temp=new CourseSemester();
+            temp.setCname(set.getString("cname"));
+            temp.setCno(set.getString("cno"));
+            temp.setSemester(set.getString("semester"));
+            res.add(temp);
+        }
+        return res;
+    }
 }

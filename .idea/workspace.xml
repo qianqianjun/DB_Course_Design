@@ -7,54 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a37a5ba4-dfed-4a96-8f5b-ecba5fb8fde3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DB/NoticeDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Notice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/course/accessnewcourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/course/searcharrange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/course/searchclass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/course/searchhelp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/root/addpeople.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/root/arrangecourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/root/runinfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/root/searchnotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/root/sendnotice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/root/addnewpeople.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/root/coursearrangement.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/root/courseinfo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/root/sendnotice.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/root/studenthelp.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/app/student/noticedetail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlets/student/course_table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlets/student/gradelist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlets/teacher/studentlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/StudentInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/student/course_table.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/student/gradelist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/app/teacher/studentlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/course_table.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DbCourseDesign.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DbCourseDesign.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/CourseDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/CourseDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/MessageDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/MessageDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/StudentDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/StudentDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/TeacherDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/TeacherDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DB/UserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/UserDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/AddCourseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/course/AddCourseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/LogoutServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/SendAnnouncementServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/course/studenthelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/changePasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/publicfun/changePasswordServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/CourseSemesterDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/CourseSemesterDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/StudyCourseDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/StudyCourseDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/StudyCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/StudyCourse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlets/content.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/content.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/handlehelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/course/handlehelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/messagedetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/newcourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/course/newcourse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/searchnew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/course/searchnew.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/sendMessageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/student/sendMessageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/addcourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/addcourse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/include/rootheader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/rootheader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/include/rootleft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/rootleft.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/include/rootright.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/rootright.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/include/studentheader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/studentheader.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/include/stuleft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/stuleft.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app/include/sturight.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/sturight.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/include/teacherheader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/teacherheader.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app/include/teacherleft.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/include/teacherleft.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/root/helpdetail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/root/newcourse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/root/newcourse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/app/student/sendmessagebody.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/app/student/sendmessagebody.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/test.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,64 +36,88 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1238552046">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="27" />
+          <entry key="project.closed" value="39" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="5" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="5" />
-          <entry key="project.open.time.8" value="4" />
-          <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.open.time.8" value="7" />
+          <entry key="project.open.time.9" value="7" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="20" />
-          <entry key="java" value="186" />
+          <entry key="class" value="9" />
+          <entry key="css" value="38" />
+          <entry key="java" value="309" />
           <entry key="jpg" value="2" />
           <entry key="js" value="2" />
-          <entry key="jsp" value="172" />
+          <entry key="jsp" value="275" />
           <entry key="png" value="2" />
           <entry key="tld" value="1" />
+          <entry key="ts" value="1" />
+          <entry key="xhtml" value="1" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="20" />
+          <entry key="CLASS" value="9" />
+          <entry key="CSS" value="38" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="186" />
-          <entry key="JSP" value="172" />
+          <entry key="JAVA" value="309" />
+          <entry key="JSP" value="275" />
           <entry key="JavaScript" value="2" />
+          <entry key="TypeScript" value="1" />
+          <entry key="XHTML" value="1" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="809" />
-          <entry key="dummy" value="26" />
-          <entry key="java" value="41669" />
-          <entry key="jsp" value="20935" />
+          <entry key="css" value="1917" />
+          <entry key="dummy" value="30" />
+          <entry key="java" value="96163" />
+          <entry key="jsp" value="48337" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="809" />
-          <entry key="JAVA" value="41669" />
-          <entry key="JSP" value="20935" />
-          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="CSS" value="1917" />
+          <entry key="HTML" value="4" />
+          <entry key="JAVA" value="96157" />
+          <entry key="JSP" value="48333" />
+          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="SQL" value="6" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -134,11 +128,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/app/include/teacherleft.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/student/course_table.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="63" lean-forward="true" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
+            <state relative-caret-position="21">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/app/include/htmlHead.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="21" column="97" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/student/course_table.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -148,21 +160,45 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
+        <option value="jsf" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id=&quot;exampleInputPassword</find>
-      <find>联系</find>
-      <find>content</find>
-      <find>id</find>
-      <find>getcno</find>
-      <find>course-${course.getCno()}</find>
-      <find>response.setStatus(500)</find>
+      <find>etGradua</find>
+      <find>qq</find>
+      <find>getprovince</find>
+      <find>setpr</find>
+      <find>选课控制</find>
+      <find>major</find>
+      <find>college</find>
+      <find>college_crea</find>
+      <find>major_cre</find>
+      <find>major_create</find>
+      <find>temp</find>
+      <find>run</find>
+      <find>major_name</find>
+      <find>stoprun</find>
+      <find>startrun</find>
+      <find>iss</find>
+      <find>选择课程</find>
+      <find>cancle_selected</find>
+      <find>cancle_</find>
+      <find>ensure</find>
+      <find>cancle_select</find>
+      <find>ensure_select</find>
+      <find>stydu_course.semester</find>
+      <find>授课</find>
+      <find>F</find>
+      <find>成绩管理</find>
+      <find>course</find>
+      <find>学生信息</find>
+      <find>成绩</find>
+      <find>课表</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,57 +207,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/app/content.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlets/sendMessageServlet.java" />
-        <option value="$PROJECT_DIR$/src/model/Message.java" />
-        <option value="$PROJECT_DIR$/src/servlets/handlehelp.java" />
-        <option value="$PROJECT_DIR$/web/app/root/helpdetail.jsp" />
-        <option value="$PROJECT_DIR$/web/app/include/teacherheader.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/searchnew.java" />
-        <option value="$PROJECT_DIR$/src/servlets/newcourse.java" />
-        <option value="$PROJECT_DIR$/web/app/addcourse.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/course/handlehelp.java" />
-        <option value="$PROJECT_DIR$/src/servlets/messagedetail.java" />
-        <option value="$PROJECT_DIR$/web/app/root/studenthelp.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/course/studenthelp.java" />
-        <option value="$PROJECT_DIR$/src/DB/MessageDB.java" />
-        <option value="$PROJECT_DIR$/src/servlets/course/searchhelp.java" />
-        <option value="$PROJECT_DIR$/src/model/Notice.java" />
-        <option value="$PROJECT_DIR$/src/DB/NoticeDB.java" />
-        <option value="$PROJECT_DIR$/web/app/root/sendnotice.jsp" />
-        <option value="$PROJECT_DIR$/web/app/student/sendmessagebody.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/student/sendMessageServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlets/publicfun/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlets/root/sendnotice.java" />
-        <option value="$PROJECT_DIR$/src/servlets/root/searchnotice.java" />
-        <option value="$PROJECT_DIR$/web/app/student/noticedetail.jsp" />
-        <option value="$PROJECT_DIR$/web/app/include/sturight.jsp" />
-        <option value="$PROJECT_DIR$/web/app/root/addnewstudent.jsp" />
-        <option value="$PROJECT_DIR$/src/model/Teacher.java" />
-        <option value="$PROJECT_DIR$/web/app/root/addnewpeople.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/root/addpeople.java" />
         <option value="$PROJECT_DIR$/src/DB/TeacherDB.java" />
-        <option value="$PROJECT_DIR$/src/DB/StudentDB.java" />
-        <option value="$PROJECT_DIR$/web/app/include/rootright.jsp" />
-        <option value="$PROJECT_DIR$/web/app/root/newcourse.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/course/accessnewcourse.java" />
-        <option value="$PROJECT_DIR$/src/servlets/course/searchnew.java" />
-        <option value="$PROJECT_DIR$/web/app/root/courseschedule.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/course/searchclass.java" />
-        <option value="$PROJECT_DIR$/src/DB/CourseDB.java" />
-        <option value="$PROJECT_DIR$/src/servlets/course/AddCourseServlet.java" />
-        <option value="$PROJECT_DIR$/src/DB/UserDB.java" />
-        <option value="$PROJECT_DIR$/src/servlets/content.java" />
-        <option value="$PROJECT_DIR$/src/servlets/root/runinfo.java" />
-        <option value="$PROJECT_DIR$/web/app/include/rootheader.jsp" />
+        <option value="$PROJECT_DIR$/src/model/SelectList.java" />
+        <option value="$PROJECT_DIR$/web/app/root/createlist.jsp" />
         <option value="$PROJECT_DIR$/web/app/include/rootleft.jsp" />
-        <option value="$PROJECT_DIR$/web/css/add.css" />
-        <option value="$PROJECT_DIR$/src/servlets/course/searcharrange.java" />
-        <option value="$PROJECT_DIR$/web/app/root/courseinfo.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/root/arrangecourse.java" />
-        <option value="$PROJECT_DIR$/web/app/root/coursearrangement.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/root/addselectlist.java" />
+        <option value="$PROJECT_DIR$/src/servlets/root/searchselectlist.java" />
+        <option value="$PROJECT_DIR$/web/app/root/runingcontrol.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/root/managerun.java" />
+        <option value="$PROJECT_DIR$/src/DB/SemesterDB.java" />
+        <option value="$PROJECT_DIR$/src/servlets/root/runingcontrol.java" />
+        <option value="$PROJECT_DIR$/src/view/course_select.java" />
+        <option value="$PROJECT_DIR$/src/DB/DB.java" />
+        <option value="$PROJECT_DIR$/src/view/Course_select.java" />
+        <option value="$PROJECT_DIR$/src/DB/SelectListDB.java" />
+        <option value="$PROJECT_DIR$/src/servlets/student/select_course.java" />
+        <option value="$PROJECT_DIR$/web/app/student/select_course.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/publicfun/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/view/course_teache.java" />
+        <option value="$PROJECT_DIR$/src/view/Course_teache.java" />
+        <option value="$PROJECT_DIR$/web/app/include/teacherright.jsp" />
+        <option value="$PROJECT_DIR$/web/app/teacher/teachlist.jsp.xhtml" />
+        <option value="$PROJECT_DIR$/web/app/root/newcourse.jsp" />
+        <option value="$PROJECT_DIR$/src/view/Course_teach.java" />
+        <option value="$PROJECT_DIR$/src/servlets/teacher/teachlist.java" />
+        <option value="$PROJECT_DIR$/src/DB/Course_teacheDB.java" />
+        <option value="$PROJECT_DIR$/web/app/teacher/teachlist.jsp" />
+        <option value="$PROJECT_DIR$/web/app/include/rootheader.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/teacher/grademanage.java" />
+        <option value="$PROJECT_DIR$/web/app/teacher/gradecourse.jsp" />
+        <option value="$PROJECT_DIR$/web/app/teacher/gradestudentlist.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/teacher/coursegrademanage.java" />
+        <option value="$PROJECT_DIR$/src/servlets/content.java" />
+        <option value="$PROJECT_DIR$/src/DB/CourseSemesterDB.java" />
         <option value="$PROJECT_DIR$/web/app/include/teacherleft.jsp" />
+        <option value="$PROJECT_DIR$/src/view/StudentInfo.java" />
+        <option value="$PROJECT_DIR$/src/servlets/teacher/studentlist.java" />
+        <option value="$PROJECT_DIR$/web/app/teacher/studentlist.jsp" />
+        <option value="$PROJECT_DIR$/web/app/include/teacherheader.jsp" />
+        <option value="$PROJECT_DIR$/src/model/StudyCourse.java" />
+        <option value="$PROJECT_DIR$/src/servlets/student/gradelist.java" />
+        <option value="$PROJECT_DIR$/out/artifacts/DbCourseDesign_war_exploded/css/add.css" />
+        <option value="$PROJECT_DIR$/web/css/add.css" />
+        <option value="$PROJECT_DIR$/src/DB/StudyCourseDB.java" />
+        <option value="$PROJECT_DIR$/web/app/student/gradelist.jsp" />
+        <option value="$PROJECT_DIR$/web/app/include/sturight.jsp" />
+        <option value="$PROJECT_DIR$/web/app/include/stuleft.jsp" />
+        <option value="$PROJECT_DIR$/web/app/include/studentheader.jsp" />
+        <option value="$PROJECT_DIR$/src/servlets/student/course_table.java" />
+        <option value="$PROJECT_DIR$/web/css/course_table.css" />
+        <option value="$PROJECT_DIR$/web/app/student/course_table.jsp" />
+        <option value="$PROJECT_DIR$/web/app/include/htmlHead.jsp" />
       </list>
     </option>
   </component>
@@ -246,10 +282,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="725" />
-    <option name="width" value="1195" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="530" />
+    <option name="y" value="20" />
+    <option name="width" value="1315" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -274,13 +311,6 @@
               <item name="DbCourseDesign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="servlets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DbCourseDesign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DbCourseDesign" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="servlets" type="462c0819:PsiDirectoryNode" />
-              <item name="root" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DbCourseDesign" type="b2602c69:ProjectViewProjectNode" />
@@ -310,15 +340,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="add&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/css/add.css&#10;add.css&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/css/add.css&#10;course&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/DB/CourseDB.java&#10;search&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/course/searchclass.java&#10;newcourse&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/newcourse.jsp&#10;searchnew&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/course/searchnew.java" />
+    <property name="SearchEverywhereHistoryKey" value="grade&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/student/gradelist.jsp&#10;newcourse&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/newcourse.jsp&#10;stu&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/studentheader.jsp&#10;stuleft&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/stuleft.jsp&#10;sturi&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/sturight.jsp&#10;studenthe&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/studentheader.jsp&#10;add&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/css/add.css&#10;runing&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/runingcontrol.jsp&#10;teacherheader&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherheader.jsp&#10;teacher&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherleft.jsp&#10;content&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/content.java&#10;login&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/publicfun/LoginServlet.java&#10;root&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootheader.jsp&#10;courseinfo&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/courseinfo.jsp&#10;teachlis&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/teacher/teachlist.jsp&#10;content.jsp&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/content.jsp&#10;teacherright&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherright.jsp&#10;roothea&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootheader.jsp&#10;teacherhea&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherheader.jsp&#10;teacherleft&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherleft.jsp&#10;searchclass&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/course/searchclass.java&#10;teacherri&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/teacherright.jsp&#10;noticedetail&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/student/noticedetail.jsp&#10;searchnotice&#9;PSI&#9;JAVA://servlets.root.searchnotice&#10;student&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/studentheader.jsp&#10;stule&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/stuleft.jsp&#10;co&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/content.jsp&#10;select&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/student/select_course.java&#10;studentheader&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/studentheader.jsp&#10;search&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/root/searchselectlist.java&#10;add.css&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/css/add.css&#10;searchlist&#9;null&#9;null&#10;course&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/newcourse.jsp&#10;rootleft&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootleft.jsp&#10;run&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/root/runingcontrol.java&#10;rootl&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootleft.jsp&#10;rooth&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/include/rootheader.jsp&#10;create&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/createlist.jsp&#10;list&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/web/app/root/createlist.jsp&#10;teacherdb&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/DB/TeacherDB.java&#10;teac&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/model/Teacher.java&#10;tea&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/DB/TeacherDB.java&#10;changeinfo&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/publicfun/changeinfo.java&#10;searchnew&#9;FILE&#9;file://D:/Data/Coder/Java/DbCourseDesign/src/servlets/course/searchnew.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544962379809" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545995436677" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JDBC" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -365,7 +395,7 @@
       <module name="DbCourseDesign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DB.*" />
+          <option name="PATTERN" value="model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -378,7 +408,24 @@
       <module name="DbCourseDesign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DB.*" />
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All Features in: view" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/view" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="DbCourseDesign" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: view" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -387,8 +434,6 @@
       </method>
     </configuration>
     <configuration name="Tomcat9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="DbCourseDesign:war exploded">
           <settings>
@@ -495,9 +540,11 @@
       <item itemvalue="Tomcat Server.Tomcat9" />
       <item itemvalue="Application.DB" />
       <item itemvalue="Application.StuDB" />
+      <item itemvalue="Cucumber java.All Features in: view" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber java.All Features in: view" />
         <item itemvalue="Application.StuDB" />
         <item itemvalue="Application.DB" />
       </list>
@@ -546,86 +593,109 @@
       <workItem from="1544839262600" duration="17458000" />
       <workItem from="1544880201248" duration="9286000" />
       <workItem from="1544925477422" duration="29997000" />
+      <workItem from="1544969256392" duration="796000" />
+      <workItem from="1545204942238" duration="14624000" />
+      <workItem from="1545226188936" duration="11879000" />
+      <workItem from="1545287986446" duration="6459000" />
+      <workItem from="1545381107614" duration="15614000" />
+      <workItem from="1545457738822" duration="14396000" />
+      <workItem from="1545475226215" duration="15994000" />
+      <workItem from="1545817956385" duration="10240000" />
+      <workItem from="1545842410276" duration="4545000" />
+      <workItem from="1545885751634" duration="21552000" />
+      <workItem from="1545961871962" duration="9316000" />
+      <workItem from="1545973426653" duration="21282000" />
+      <workItem from="1545996358635" duration="229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223602000" />
+    <option name="totallyTimeSpent" value="370528000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" sideWeight="0.10212766" side_tool="true" weight="0.20509383" />
+      <window_info id="Structure" order="0" sideWeight="0.28652483" side_tool="true" weight="0.16353887" />
       <window_info id="Designer" order="1" />
-      <window_info id="JRebel" order="2" sideWeight="0.33818182" side_tool="true" weight="0.13941018" />
+      <window_info id="JRebel" order="2" sideWeight="0.29032257" side_tool="true" weight="0.16353887" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.33818182" side_tool="true" weight="0.13941018" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.15130435" side_tool="true" weight="0.1930295" />
-      <window_info active="true" content_ui="combo" id="Project" order="8" sideWeight="0.84869564" visible="true" weight="0.16152816" />
+      <window_info id="Web" order="7" sideWeight="0.30780143" side_tool="true" weight="0.19839142" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" sideWeight="0.6921986" visible="true" weight="0.20442359" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.45815602" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.40141845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.0" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020107" side_tool="true" weight="0.35602838" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5033512" side_tool="true" weight="0.635461" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49798927" weight="0.004255319" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.49798927" weight="0.22978723" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5013405" side_tool="true" weight="0.6099291" />
-      <window_info anchor="bottom" id="Problems" order="16" weight="0.32907802" />
+      <window_info anchor="bottom" x="22" y="183" width="1492" height="457" id="JRebel Executor" order="14" sideWeight="0.4966488" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5033512" side_tool="true" weight="0.635461" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.2141844" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="JRebel Setup Guide" order="9" weight="0.3297587" />
     </layout>
     <layout-to-restore>
-      <window_info id="Structure" order="0" sideWeight="0.10212766" side_tool="true" weight="0.20509383" />
+      <window_info id="Structure" order="0" sideWeight="0.28652483" side_tool="true" weight="0.16353887" />
       <window_info id="Designer" order="1" />
-      <window_info id="JRebel" order="2" sideWeight="0.33818182" side_tool="true" weight="0.13941018" />
+      <window_info id="JRebel" order="2" sideWeight="0.29032257" side_tool="true" weight="0.16353887" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.33818182" side_tool="true" weight="0.13941018" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.15130435" side_tool="true" weight="0.1930295" />
-      <window_info content_ui="combo" id="Project" order="8" sideWeight="0.84869564" visible="true" weight="0.1769437" />
+      <window_info id="Web" order="7" sideWeight="0.30835736" side_tool="true" weight="0.22989276" />
+      <window_info active="true" content_ui="combo" id="Project" order="8" sideWeight="0.69164264" visible="true" weight="0.19839142" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.45815602" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.40141845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.0" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020107" side_tool="true" weight="0.35602838" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5033512" side_tool="true" weight="0.635461" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49798927" weight="0.004255319" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" sideWeight="0.49798927" weight="0.0" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5013405" side_tool="true" weight="0.6099291" />
-      <window_info anchor="bottom" id="Problems" order="16" weight="0.32907802" />
+      <window_info anchor="bottom" x="22" y="183" width="1492" height="457" id="JRebel Executor" order="14" sideWeight="0.4966488" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.5033512" side_tool="true" weight="0.635461" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.2141844" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="JRebel Setup Guide" order="9" weight="0.3297587" />
@@ -638,356 +708,441 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/Course.java">
+    <entry file="file://$PROJECT_DIR$/out/production/DbCourseDesign/view/Course_select.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/addcourse.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/course/handlehelp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/messagedetail.java" />
-    <entry file="file://$PROJECT_DIR$/src/servlets/course/studenthelp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/course/newcourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/SendAnnouncementServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/DB/MessageDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-992">
-          <caret line="140" column="23" lean-forward="true" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/course/searchhelp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="37" column="44" lean-forward="true" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/root/helpdetail.jsp" />
-    <entry file="file://$PROJECT_DIR$/web/app/root/studenthelp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/student/sendmessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Notice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/NoticeDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/student/sendMessageServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/student/sendmessagebody.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/root/sendnotice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/include/sturight.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/student/noticedetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="e#959#986#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/root/searchnotice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/root/sendnotice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="250">
           <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Teacher.java">
+    <entry file="file://$PROJECT_DIR$/out/production/DbCourseDesign/DB/CourseDB.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/DbCourseDesign/DB/DB.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="23" />
+        <state relative-caret-position="125">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/StudentDB.java">
+    <entry file="file://$PROJECT_DIR$/web/app/teacher/teachlist.jsp.xhtml" />
+    <entry file="file://$PROJECT_DIR$/src/view/Course_teach.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/publicfun/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/TeacherDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/course/accessnewcourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/include/rootright.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/root/addnewpeople.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/CourseDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1438">
-          <caret line="162" column="37" lean-forward="true" selection-start-line="162" selection-start-column="37" selection-end-line="162" selection-end-column="37" />
+        <state relative-caret-position="300">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
-            <element signature="e#5948#5956#0" expanded="true" />
-            <element signature="e#6227#6235#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/course/searchclass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="25">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/course/AddCourseServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/app/include/rootright.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/UserDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/publicfun/changePasswordServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/root/addpeople.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="88" column="48" lean-forward="true" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/include/htmlHead.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/include/rootheader.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/include/rootleft.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="275">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/course/searchnew.java">
+    <entry file="file://$PROJECT_DIR$/src/servlets/student/select_course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="275">
+          <caret line="29" column="64" lean-forward="true" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/content.java">
+    <entry file="file://$PROJECT_DIR$/web/app/include/teacherright.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="47" column="27" lean-forward="true" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
+        <state relative-caret-position="200">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#span#2;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/course/searcharrange.java">
+    <entry file="file://$PROJECT_DIR$/web/app/content.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/root/newcourse.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="49" column="38" lean-forward="true" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        <state relative-caret-position="205">
+          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/root/courseinfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="109" column="54" lean-forward="true" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
+        <state relative-caret-position="30">
+          <caret line="137" column="22" lean-forward="true" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/root/runinfo.java">
+    <entry file="file://$PROJECT_DIR$/src/DB/Course_teacheDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/DB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/add.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="122" column="14" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/root/coursearrangement.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="96" column="62" lean-forward="true" selection-start-line="96" selection-start-column="62" selection-end-line="96" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/root/arrangecourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+        <state relative-caret-position="641">
+          <caret line="73" column="91" selection-start-line="73" selection-start-column="91" selection-end-line="73" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#1891#1905#0" expanded="true" />
+            <element signature="e#3603#3611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/include/rootheader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/teacher/teachlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/teacher/teachlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/CourseSemester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding>
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/teacher/grademanage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/teacher/gradecourse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="27" column="117" selection-start-line="27" selection-start-column="117" selection-end-line="27" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/teacher/gradestudentlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/teacher/coursegrademanage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/publicfun/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1438">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/include/teacherleft.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/tomcat9/lib/tomcat-util.jar!/org/apache/tomcat/util/threads/TaskThread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/teacher/studentlist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/teacher/studentlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/CourseSemesterDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3031">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="e#8085#8101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/StudentInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#451#452#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/include/teacherheader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="65" column="25" lean-forward="true" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/root/runingcontrol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/root/runingcontrol.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Course_select.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/StudyCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/DbCourseDesign_war_exploded/css/add.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="228" column="20" lean-forward="true" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/login.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/include/teacherleft.jsp">
+    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/add.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="63" lean-forward="true" selection-start-line="1" selection-start-column="63" selection-end-line="1" selection-end-column="63" />
+        <state relative-caret-position="238">
+          <caret line="217" column="1" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/StudyCourseDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1096">
+          <caret line="247" column="35" lean-forward="true" selection-start-line="247" selection-start-column="35" selection-end-line="247" selection-end-column="35" />
+          <folding>
+            <element signature="e#9692#9700#0" expanded="true" />
+            <element signature="e#10324#10337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/include/sturight.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/include/stuleft.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="88" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/include/studentheader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/root/newcourse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/student/gradelist.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/student/gradelist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/student/noticedetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/course_table.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/student/course_table.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/student/course_table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/include/htmlHead.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="21" column="97" selection-start-line="21" selection-start-column="97" selection-end-line="21" selection-end-column="97" />
         </state>
       </provider>
     </entry>

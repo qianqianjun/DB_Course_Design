@@ -61,18 +61,18 @@
             <div class="index_rctx" id="area_three">
                 <h5 class="index_title">
                     <span class="title">成绩一览</span>
-                    <span class="more"><a href="#" class="right_more" target="_blank">更多</a></span>
+                    <span class="more"><a href="${pageContext.request.contextPath}/gradelist" class="right_more" target="_blank">更多</a></span>
                 </h5>
                 <div class="list-group">
                     <c:if test="${!empty grade_list}">
                         <c:forEach items="${grade_list}" var="elem">
-                            <a class="list-group-item" href="${pageContext.request.contextPath}/searchnotice?id=${elem.getId()}" target="_blank">
-                                <%--<span class="title_help">--%>
-                                        <%--${elem.getCname()}--%>
-                                <%--</span>--%>
-                                <%--<span class="sno_help">--%>
-                                        <%--${elem.getGrade()}--%>
-                                <%--</span>--%>
+                            <a class="list-group-item">
+                                <span class="title_help">
+                                        ${elem.getCname()}
+                                </span>
+                                <span class="sno_help">
+                                        ${elem.getGrade()}
+                                </span>
                             </a>
                         </c:forEach>
                     </c:if>

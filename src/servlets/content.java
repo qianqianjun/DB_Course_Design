@@ -47,8 +47,10 @@ public class content extends HttpServlet {
                 try {
                     List<Notice> result = noticeDB.getNotice();
                     List<Course_select> course_table=studyCourseDB.getCourseTableList(sno,semester);
+                    List<StudyCourse> gradelist=studyCourseDB.getGradeList(sno,semester);
                     request.setAttribute("noticelist", result);
                     request.setAttribute("course_table_list",course_table);
+                    request.setAttribute("grade_list",gradelist);
                     request.getRequestDispatcher("app/content.jsp").forward(request, response);
                 } catch (SQLException e) {
                     e.printStackTrace();

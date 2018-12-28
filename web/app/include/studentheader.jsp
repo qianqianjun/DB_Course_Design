@@ -56,10 +56,10 @@
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li>
-                            <a target="_blank" href="">课表查看</a>
+                            <a target="_blank" href="${pageContext.request.contextPath}/course_table">课表查看</a>
                         </li>
                         <li>
-                            <a target="_blank" href="">成绩查询</a>
+                            <a target="_blank" href="${pageContext.request.contextPath}/gradelist">成绩查询</a>
                         </li>
                     </ul>
                 </li>

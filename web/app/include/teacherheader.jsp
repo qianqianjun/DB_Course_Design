@@ -39,10 +39,10 @@
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li>
-                            <a href="${pageContext.request.contextPath}/app/managepersonalinfo.jsp">成绩管理</a>
+                            <a href="${pageContext.request.contextPath}/grademanage" target="_blank">成绩管理</a>
                         </li>
                         <li>
-                            <a href="${pageContext.request.contextPath}/app/managepersonalinfo.jsp">学生信息查看</a>
+                            <a href="${pageContext.request.contextPath}/studentlist" target="_blank">学生信息查看</a>
                         </li>
                         <li>
                             <a href="${pageContext.request.contextPath}/app/managepersonalinfo.jsp">个人信息维护</a>
