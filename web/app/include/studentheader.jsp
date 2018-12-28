@@ -56,16 +56,10 @@
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li>
-                            <a tabindex="-1" target="_blank">课表查看</a>
+                            <a target="_blank" href="">课表查看</a>
                         </li>
                         <li>
-                            <a tabindex="-1" target="_blank">成绩查询</a>
-                        </li>
-                        <li>
-                            <a tabindex="-1" target="_blank">通知公告</a>
-                        </li>
-                        <li>
-                            <a tabindex="-1" target="_blank">考试时间</a>
+                            <a target="_blank" href="">成绩查询</a>
                         </li>
                     </ul>
                 </li>

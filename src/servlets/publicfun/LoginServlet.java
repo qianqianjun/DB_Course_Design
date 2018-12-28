@@ -1,11 +1,11 @@
 package servlets.publicfun;
+import DB.SemesterDB;
 import DB.StudentDB;
 import DB.TeacherDB;
 import DB.UserDB;
 import model.Student;
 import model.Teacher;
 import model.User;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
@@ -53,9 +54,25 @@ public class LoginServlet extends HttpServlet {
                     printWriter.close();
                 }
                 else {
+                    SemesterDB semesterDB=new SemesterDB();
+                    String semester=null;
+                    try {
+                        semester=semesterDB.getCurrentSemester();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                    if(semester==null)
+                    {
+                        PrintWriter printWriter=response.getWriter();
+                        printWriter.print("<script type='text/javascript'>alert('学期列表出现错误，请联系管理员！');window.location.href='"+request.getContextPath()+"/index.jsp'</script>");
+                        printWriter.flush();
+                        printWriter.close();
+                        response.setStatus(500);
+                    }
                     HttpSession session = request.getSession();
                     session.setAttribute("userinfo", student);
                     session.setAttribute("type","student");
+                    session.setAttribute("semester",semester);
                     //重定向到另外一个servlet
                     response.setStatus(302);
                     response.sendRedirect("content");
@@ -74,11 +91,27 @@ public class LoginServlet extends HttpServlet {
                     printWriter.close();
                 }
                 else {
+                    SemesterDB semesterDB=new SemesterDB();
+                    String semester=null;
+                    try {
+                        semester=semesterDB.getCurrentSemester();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                    if(semester==null)
+                    {
+                        PrintWriter printWriter=response.getWriter();
+                        printWriter.print("<script type='text/javascript'>alert('学期列表出现错误，请联系管理员！');window.location.href='"+request.getContextPath()+"/index.jsp'</script>");
+                        printWriter.flush();
+                        printWriter.close();
+                        response.setStatus(500);
+                    }
                     HttpSession session = request.getSession();
                     session.setAttribute("userinfo", teacher);
-                    //跳转到content页面：
+                    session.setAttribute("type","teacher");
+                    session.setAttribute("semester",semester);
                     response.setStatus(302);
-                    response.sendRedirect(request.getContextPath() + "/app/content.jsp");
+                    response.sendRedirect("content");
                 }
             }
             else if(type.equals("root")) {
@@ -93,9 +126,25 @@ public class LoginServlet extends HttpServlet {
                     //设置管理员身份标识
                     teacher.setType("root");
                     //设置管理员登录标识
+                    SemesterDB semesterDB=new SemesterDB();
+                    String semester=null;
+                    try {
+                        semester=semesterDB.getCurrentSemester();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                    if(semester==null)
+                    {
+                        PrintWriter printWriter=response.getWriter();
+                        printWriter.print("<script type='text/javascript'>alert('学期列表出现错误，请联系管理员！');window.location.href='"+request.getContextPath()+"/index.jsp'</script>");
+                        printWriter.flush();
+                        printWriter.close();
+                        response.setStatus(500);
+                    }
                     HttpSession session = request.getSession();
                     session.setAttribute("userinfo", teacher);
                     session.setAttribute("type","root");
+                    session.setAttribute("semester",semester);
                     //重定向到另外一个servlet
                     response.setStatus(302);
                     response.sendRedirect("content");

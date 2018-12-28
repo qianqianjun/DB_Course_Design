@@ -6,13 +6,27 @@
             <div class="index_rctx" id="area_one">
                 <h5 class="index_title">
                     <span class="title">课程信息</span>
-                    <span class="more"><a href="#" class="right_more" target="_blank">更多</a></span>
+                    <span class="more"><a href="${pageContext.request.contextPath}/course_table" class="right_more" target="_blank">更多</a></span>
                 </h5>
-                <a class="list-group-item">
-                    <span class="title">
-                      7-17周(11-13节)-星期一-面向对象程序设计-北区-A阶-303-江志英
-                    </span>
-                </a>
+                <c:if test="${!empty noticelist}">
+                    <c:forEach items="${course_table_list}" var="elem">
+                        <a class="list-group-item">
+                            <span class="title_help">
+                                    ${elem.getCname()}
+                            </span>
+                            <span class="sno_help">
+                                    ${elem.getLocation()}
+                            </span>
+                        </a>
+                    </c:forEach>
+                </c:if>
+                <c:if test="${empty noticelist}">
+                    <a class="list-group-item">
+                        <span class="title_help">
+                                当前没有相关课程信息
+                        </span>
+                    </a>
+                </c:if>
             </div>
         </div>
         <div class="col-md-4">
@@ -24,9 +38,9 @@
                     <c:if test="${!empty noticelist}">
                         <c:forEach items="${noticelist}" var="elem">
                             <a class="list-group-item" href="${pageContext.request.contextPath}/searchnotice?id=${elem.getId()}" target="_blank">
-                        <span class="title_help">
-                                ${elem.getTitle()}
-                        </span>
+                                <span class="title_help">
+                                        ${elem.getTitle()}
+                                </span>
                                 <span class="sno_help">
                                         ${elem.getSendtime()}
                                 </span>
@@ -50,12 +64,25 @@
                     <span class="more"><a href="#" class="right_more" target="_blank">更多</a></span>
                 </h5>
                 <div class="list-group">
-                    <a  class="list-group-item">
-								<span class="title">
-								2017-2018-2-专业选修-计算方法
-								</span>
-                        <span class="fraction float_r">A</span>
-                    </a>
+                    <c:if test="${!empty grade_list}">
+                        <c:forEach items="${grade_list}" var="elem">
+                            <a class="list-group-item" href="${pageContext.request.contextPath}/searchnotice?id=${elem.getId()}" target="_blank">
+                                <%--<span class="title_help">--%>
+                                        <%--${elem.getCname()}--%>
+                                <%--</span>--%>
+                                <%--<span class="sno_help">--%>
+                                        <%--${elem.getGrade()}--%>
+                                <%--</span>--%>
+                            </a>
+                        </c:forEach>
+                    </c:if>
+                    <c:if test="${empty grade_list}">
+                        <a class="list-group-item">
+                        <span class="title_help">
+                                当前没有成绩的相关信息。
+                        </span>
+                        </a>
+                    </c:if>
                 </div>
             </div>
         </div>

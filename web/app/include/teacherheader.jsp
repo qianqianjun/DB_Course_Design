@@ -31,7 +31,7 @@
         <nav id="cdNav" class="navbar-collapse bs-navbar-collapse collapse" role="navigation" aria-expanded="false">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="${pageContext.request.contextPath}/app/content.jsp">首页</a>
+                    <a href="${pageContext.request.contextPath}/content">首页</a>
                 </li>
                 <li class="dropdown">
                     <a id="drop1" href="" role="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">信息维护
@@ -58,7 +58,7 @@
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                         <li>
-                            <a target="_blank">授课查看</a>
+                            <a target="_blank" href="${pageContext.request.contextPath}/teachlist">授课查看</a>
                         </li>
                         <li>
                             <a href="${pageContext.request.contextPath}/app/addcourse.jsp">添加新课程</a>

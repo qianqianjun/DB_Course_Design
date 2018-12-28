@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li class="col-md-6 col-sm-6 col-xs-6">
-                <a href="#" target="_blank">
+                <a href="${pageContext.request.contextPath}/teachlist" target="_blank">
                     <img src="${pageContext.request.contextPath}/images/ico_but30.png">
                     <h5>授课查看</h5>
                 </a>
@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li class="col-md-6 col-sm-6 col-xs-6">
-                <a href="#" target="_blank">
+                <a href="${pageContext.request.contextPath}/grademanage" target="_blank">
                     <img src="${pageContext.request.contextPath}/images/ico_but18.png">
                     <h5>成绩管理</h5>
                 </a>

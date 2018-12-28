@@ -70,7 +70,8 @@ public class CourseSemesterDB {
         return result;
     }
 
-    public ArrayList<Course_select> select_course(String semester, String cnolist,String sno,String cno,String cname,String college,String capacity) throws SQLException {
+    public ArrayList<Course_select> select_course(String semester, String cnolist,String sno,String cno,String cname,String college,String capacity)
+            throws SQLException {
         Connection connection=DB.getConnection();
 
 
@@ -149,5 +150,29 @@ public class CourseSemesterDB {
         }
         DB.close(connection,ps,resultSet);
         return result;
+    }
+
+    public ArrayList<CourseSemester> getTeachlist(String tno, String semester, Integer status) throws SQLException {
+        Connection connection=DB.getConnection();
+        String sql="select course.cname,course_semester.* from course_semester " +
+                "left join course on course_semester.cno=course.cno " +
+                "where course_semester.semester=? and course_semester.tno=? and course_semester.status=?";
+        PreparedStatement ps=connection.prepareStatement(sql);
+        ps.setString(1,semester);
+        ps.setString(2,tno);
+        ps.setInt(3,status);
+        ResultSet set=ps.executeQuery();
+        ArrayList<CourseSemester> res=new ArrayList<CourseSemester>();
+        while(set.next())
+        {
+            CourseSemester temp=new CourseSemester();
+            temp.setCname(set.getString("cname"));
+            temp.setCno(set.getString("cno"));
+            temp.setStatus(Integer.parseInt(set.getString("status")));
+            temp.setSemester(set.getString("semester"));
+            res.add(temp);
+        }
+        DB.close(connection,ps,set);
+        return res;
     }
 }

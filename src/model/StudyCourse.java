@@ -6,6 +6,17 @@ public class StudyCourse {
     private String cno;
     private String grade;
 
+    //下面的是view 属性
+    private String sname;
+
+    public String getSname() {
+        return sname;
+    }
+
+    public void setSname(String sname) {
+        this.sname = sname;
+    }
+
     public String getSemester() {
         return semester;
     }
